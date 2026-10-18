@@ -1,10 +1,163 @@
 # Battery analytics prototype: results summary
 
-## Verdict
+## Current findings after E0–E9 and fleet forecasting
+
+The prototype supports a **paid calibration and validation pilot**, with the
+frozen charge-only workflow still the recommended default. Its headline remains
+**3.72 SoH percentage points cell-macro MAE on 41 unseen lab cells**, rising to
+**13.89 pp on an entirely unseen dataset**. Charging features beat the fixed
+cycle-count-only curve (8.98 pp LOCO), but the additional pipelines do not show
+a robust overall gain on matched cohorts. The tracker intervals are overconfident,
+and fleet replacement budgeting is not validated.
+
+The original model code, input tables and metrics remain frozen at `baseline-v1`.
+The new experiments and the separate fleet study were preregistered and committed
+before execution. Every experiment, including regressions and abstentions, is in
+[the improvement report](improvements/results.md); the complete count tables are
+in [the fleet forecasting report](fleet_forecast/results.md). This remains an
+exploratory public-data study, with no Baaz pack or operational-savings evidence.
+
+### SoH comparison and changed assumptions
+
+All errors below are **cell-macro** percentage points. The matched baseline
+columns use exactly each variant's scored rows. Warmup variants have fewer cells;
+their lower unpaired average must not be advertised as a gain over the 41-cell
+headline. E1/E4/E8 require known cycle history, E3_delta requires five entry
+charges, and E3_anchor allows one independently measured entry capacity.
+The unknown-age baseline still excludes cycle count and capacity anchors.
+
+| Variant         |   Scored cells |   LOCO MAE (pp) |   LODO MAE (pp) |   Matched baseline LOCO (pp) |   Matched baseline LODO (pp) |
+|:----------------|---------------:|----------------:|----------------:|-----------------------------:|-----------------------------:|
+| Frozen_baseline |             41 |            3.72 |           13.89 |                         3.72 |                        13.89 |
+| E1_cycle        |             41 |            8.98 |           49.00 |                         3.72 |                        13.89 |
+| E2_replace      |             41 |            3.64 |           30.35 |                         3.72 |                        13.89 |
+| E2_alongside    |             41 |            3.58 |           62.61 |                         3.72 |                        13.89 |
+| E3_delta        |             36 |            4.34 |            7.58 |                         2.50 |                        12.24 |
+| E3_anchor       |             37 |            4.81 |           16.97 |                         2.78 |                        11.97 |
+| E4_combined     |             36 |            3.02 |           59.68 |                         2.50 |                        12.24 |
+| E5_filter       |             36 |            3.19 |           60.24 |                         2.50 |                        12.24 |
+| E8_forced_ica   |             36 |            3.17 |           35.16 |                         2.50 |                        12.24 |
+| E8_optional_ica |             36 |            3.04 |           38.89 |                         2.50 |                        12.24 |
+
+The throughput additions' small LOCO gains do not compensate for much worse
+transfer. Entry-relative features improve LODO on matched rows (7.58 vs 12.24 pp)
+but worsen LOCO (4.34 vs 2.50 pp). The one-entry capacity offset, combined model,
+Kalman tracker and ICA additions do not earn a change to the recommended default.
+Raw/median errors, RMSE, pooled-row/equal-dataset results, per-cell results and
+low-SoH bands for every variant remain in [the complete metrics](improvements/all_metrics.csv)
+and [ablation](improvements/ablation.csv), with E9's repeated calibration results
+reported separately in its [aggregate metrics](improvements/E9_calibration/aggregate_metrics.csv).
+
+E0's **post-hoc** sensitivity restricted to at least 20 observations gives
+2.50 pp across 36 cells, excluding five cells and six observations. It does not
+replace 3.72 pp. NASA below-70% errors are 18.37 pp cold, 6.18 room and 38.72 warm; the warm group has
+only THREE observations. Cold conditions explain part of the weakness, not all.
+
+### Tracking uncertainty and replacement alerts
+
+E5's nominal 95% bands are uncalibrated; actual cell-macro coverage is:
+
+| dataset   |   n_cells |   Actual 95% interval coverage (%) |   mean_width_pp |
+|:----------|----------:|-----------------------------------:|----------------:|
+| calce     |         7 |                              16.24 |            0.92 |
+| nasa      |        21 |                              81.75 |           12.16 |
+| oxford    |         8 |                              54.02 |            1.82 |
+
+E6/E7 retain E5's SoH estimates and add decisions, rather than independent new
+SoH improvements. The table below scores the **first** alert against all 19
+observed laboratory 70% crossings. Scenario days assume 2 swaps per day and one source
+lab cycle per swap; these endpoints are not field failures or stranded riders.
+
+| method            |   Scenario days |   events |   timely |   premature |   late |   none |   no_eligible_history |
+|:------------------|----------------:|---------:|---------:|------------:|-------:|-------:|----------------------:|
+| frozen_raw_linear |           14.00 |       19 |        0 |          13 |      2 |      2 |                     2 |
+| frozen_raw_linear |           60.00 |       19 |        6 |           7 |      2 |      2 |                     2 |
+| frozen_raw_linear |           90.00 |       19 |        6 |           7 |      2 |      2 |                     2 |
+| probabilistic     |           14.00 |       19 |        2 |           3 |      6 |      5 |                     3 |
+| probabilistic     |           60.00 |       19 |        6 |           2 |      3 |      5 |                     3 |
+| probabilistic     |           90.00 |       19 |        8 |           1 |      2 |      5 |                     3 |
+
+At 14 days, timely alerts improve from 0/19 to 2/19, with substantial misses and
+coverage gaps. At 60 days they remain 6/19; at 90 days they rise from 6/19 to 8/19.
+These results do not validate replacement decisions or calibrated risk claims.
+E7 catches no true-fast cells in CALCE/NASA at its fixed decision point and 1/3
+in Oxford. [Interval calibration](improvements/E5_filter/interval_calibration.csv),
+[alert results](improvements/E6_probabilistic/alert_metrics.csv), and
+[fast-degradation evaluation](improvements/E7_fast/classification_metrics.csv)
+retain the denominators and uncertainty limitations.
+
+### Target calibration: evidence and limits
+
+The source-only E2 model stays frozen; the correction is an additive offset.
+Each calibration cell supplies its **complete labelled laboratory trajectory**,
+not just a commissioning capacity check. Values below average five correlated
+calibration-cell choices; SD is not an independent-sample confidence interval.
+
+| Dataset   | 0 calibration cells: MAE ± SD (pp)   | 1 calibration cells: MAE ± SD (pp)   | 2 calibration cells: MAE ± SD (pp)   | 4 calibration cells: MAE ± SD (pp)   |
+|:----------|:-------------------------------------|:-------------------------------------|:-------------------------------------|:-------------------------------------|
+| calce     | 16.59 ± 0.00                         | 3.81 ± 0.28                          | 3.79 ± 0.41                          | 3.41 ± 0.51                          |
+| nasa      | 39.28 ± 0.00                         | 30.58 ± 3.27                         | 29.67 ± 2.24                         | 33.79 ± 3.49                         |
+| oxford    | 16.13 ± 0.00                         | 5.81 ± 0.20                          | 5.61 ± 0.21                          | 5.63 ± 0.31                          |
+
+CALCE/Oxford improve over the uncalibrated E2 source model, but that starting
+model is worse than the frozen reference. NASA remains poor and adding cells
+does not reliably help. Changing test cohorts and a separately locked cell per
+dataset are reported explicitly, with [matched frozen-reference comparisons](improvements/E9_calibration/paired_learning_curve.csv).
+This does not establish how many Baaz packs or reference checks are sufficient.
+
+![Calibration learning curve](improvements/figures/calibration_learning_curve.png)
+
+### Fleet replacement counts: not yet replacement budgeting
+
+Four preregistered today points per dataset, with 30, 60 and 90 scenario-day horizons;
+only held-out raw-linear RUL forecasts are counted. This separate experiment
+uses the preregistered deterministic fallback, **not calibrated probabilities**.
+Below, errors are conditional on usable forecasts from both methods and known
+outcomes. Full-fleet unknown outcomes and missing forecasts remain explicit
+count bounds in [the scenario table](fleet_forecast/scenarios.csv).
+
+| Method                      |   Matched scenarios |   Count MAE (batteries) |   Count RMSE (batteries) |   Signed bias (batteries) |
+|:----------------------------|--------------------:|------------------------:|-------------------------:|--------------------------:|
+| Charge-based RUL            |                  30 |                    0.37 |                     0.66 |                     -0.03 |
+| Cycle count                 |                  30 |                    0.80 |                     1.37 |                     -0.53 |
+| Historical replacement rate |                  30 |                    0.43 |                     0.83 |                     -0.43 |
+
+The charge model's 0.37-battery MAE advantage over 0.43 historical-rate MAE is
+fragile. Matched CALCE/NASA scenarios average only 2–3 cells, and Oxford's matched
+windows have zero actual replacements. Near-zero mean bias does not prove
+that individual errors cancel: CALCE slightly overpredicts while NASA
+underpredicts, and unconditional full-fleet bias remains uncertain.
+
+| dataset   |   mean_matched_cells |   windows_with_actual_replacements |   signed_count_bias |
+|:----------|---------------------:|-----------------------------------:|--------------------:|
+| calce     |                 2.25 |                                  4 |                0.11 |
+| nasa      |                 2.75 |                                  9 |               -0.22 |
+| oxford    |                 7.08 |                                  0 |                0.00 |
+
+![Fleet counts versus observed outcomes](fleet_forecast/replacement_counts.png)
+
+### Updated pitch conclusion and dashboard
+
+Keep the conservative frozen SoH headline and propose a target-specific
+calibration/validation pilot against Baaz's existing BMS analytics. Do not claim
+accurate replacement dates/budgets, calibrated 95% intervals, pack-level accuracy,
+proven Delhi heat performance, prevented failures, life extension or energy
+savings. The dashboard defaults to baseline and exposes experimental E8 and
+E5/E6 views, uncertainty limitations, and a separate **Fleet budgeting** tab.
+
+The details below are the **frozen baseline report**, retained for audit.
+Its feature exclusions, model tables, first-alert policy and proposed next
+experiments describe baseline-v1; completed follow-up experiments are above.
+
+## Frozen baseline details
+
+<!-- frozen-baseline-details:start -->
+
+### Verdict
 
 Pitch-ready with caveats for a paid calibration and validation pilot. The charge-only SoH workflow achieves 3.72 percentage points cell-macro MAE on 41 held-out laboratory cells, but the NASA tail and low-health errors are material. Entire-dataset holdout error rises to 13.89 points. RUL forecasts and the first replacement-alert timing are not reliable enough for operational replacement claims. No battery life extension, energy saving, avoided breakdown or Baaz pack accuracy has been demonstrated.
 
-## Data inventory
+### Data inventory
 
 All 7,599 downloaded files were inspected before modelling. See [the complete inventory](inventory_report.md), [all per-file schemas and checks](inventory/file_manifest.json), and [all 49 cells](inventory/cells.csv). Sources remain unchanged. NASA is a cleaned CSV derivative, Oxford is a readable MATLAB struct, and CALCE is a CSV mirror. None is Baaz operational data.
 
@@ -18,7 +171,7 @@ There are 15,750 parsed charge episodes and 14,110 eligible labelled upper-windo
 
 NASA readmes document unexplained cold-test low capacities and a test-control crash in the B0049–B0052 series. CALCE's 12.497Ah counter for a nominal 1.35Ah cell is flagged, not silently corrected. CALCE has no measured temperature values despite two named temperature columns. NASA includes 43–44°C controlled tests; Oxford has a documented 40°C chamber. These do not establish Delhi station performance above 45°C.
 
-## Unified data and label pairing
+### Unified data and label pairing
 
 The cached [cycle table](../data/processed/cycles.parquet) contains dataset, cell identifier, source ageing-cycle index, episode identifier, rated Ah, discharge-measured Ah, nominal-relative SoH, ambient metadata, all charge features, eligibility reasons and exact source references. CSV copies and separate discharge-reference tables are included. A fingerprint covers source file sizes and modification times, loader/feature/QC code and configuration so changed inputs invalidate parsing caches.
 
@@ -26,7 +179,7 @@ NASA charge traces pair to the next discharge, with superseded charges excluded.
 
 SoH is measured Ah divided by the documented nominal Ah: NASA 2.0, Oxford 0.740, CALCE CX2 1.350. Initial capacity is never used as the denominator. Nominal normalisation aligns units, but does not remove chemistry, current, temperature or cutoff differences. NASA available capacity under cold/deep-discharge conditions is not automatically irreversible ageing. The CALCE mirror's CX2-25 identity and filename-only ambient setting remain provenance limitations.
 
-## Features and leakage assessment
+### Features and leakage assessment
 
 | Feature                    | Definition at current configuration                     | Unit         | Use                                   |
 |:---------------------------|:--------------------------------------------------------|:-------------|:--------------------------------------|
@@ -45,17 +198,17 @@ SoH is measured Ah divided by the documented nominal Ah: NASA 2.0, Oxford 0.740,
 
 All voltage thresholds are configurable per dataset. The common model requires a complete 3.9–4.18V window and omits temperature and CV information. Upper-window times are relative to the lower crossing, and temperature rise is measured across that window rather than from the start of a potentially partial charge. A synthetic partial-start invariance check passes. This does not establish real partial-swap accuracy, which needs a separate perturbation and target-fleet study.
 
-**No SoH regressor receives discharge capacity, discharge current/voltage, full-charge capacity, cycle number, timestamps, cell ID, dataset ID or a previous observed SoH label.** Oxford current is reconstructed from the local derivative of the charging-only mAh counter, with serial days converted to seconds. That counter must remain independently sourced from the C1 discharge label. Charging durations legitimately correlate with capacity; that physical relation is not discharge-label leakage. The four timing features are correlated and one is their sum, so individual coefficients and permutation ranks are not causal explanations. No incremental-capacity peak feature is used.
+**No frozen-baseline SoH regressor receives discharge capacity, discharge current/voltage, full-charge capacity, cycle number, timestamps, cell ID, dataset ID or a previous observed SoH label.** Oxford current is reconstructed from the local derivative of the charging-only mAh counter, with serial days converted to seconds. That counter must remain independently sourced from the C1 discharge label. Charging durations legitimately correlate with capacity; that physical relation is not discharge-label leakage. The four timing features are correlated and one is their sum, so individual coefficients and permutation ranks are not causal explanations. No incremental-capacity peak feature is used in the frozen baseline.
 
 Oxford C1 traces do not supply a CV taper and receive no fabricated zero. CALCE temperature remains missing. Separate temperature and CV variants use only feature-complete records. CALCE CV samples are irregular current-change observations, so taper fits use actual time and elapsed-time weights, with minimum-count and gap-coverage checks.
 
-## Models and validation
+### Models and validation
 
 Fixed candidates are a cell-balanced mean baseline, Ridge linear regression, histogram gradient boosting and random forest. Parameters were fixed before evaluating results. A separate 25% split of whole training cells selects the family inside each outer fold. Scalers and models fit training rows only. No random row split or random row early-stopping validation is used. The final all-data model is a **laboratory reference linear model**, not the source of demo accuracy. The dashboard uses out-of-fold predictions.
 
 There are 106 audited outer folds: 41 common-feature cell holdouts, three complete dataset holdouts, 34 temperature-variant cell holdouts, and 28 CV-variant cell holdouts. Every outer cell is absent from both inner fitting and inner validation. In leave-one-dataset-out, both other datasets supply training rows. [Fold memberships](evaluation/fold_audit.json) and [fixed model code](../src/battery_analytics/models.py) are included. The comparisons are exploratory across only three datasets, not a preregistered external field trial.
 
-### Model comparison
+#### Model comparison
 
 Metrics below are means over cells, giving each cell equal weight. Pooled-row MAE is misleadingly lower because CALCE supplies 11,911 of 14,110 rows. For the selected workflow, pooled-row raw MAE is 1.82 points, compared with the more conservative 3.72-point cell-macro result. Equal-dataset macro MAE is 2.59 points. Use cell-macro results in the pitch and disclose the NASA failures.
 
@@ -74,7 +227,7 @@ Metrics below are means over cells, giving each cell equal weight. Pooled-row MA
 
 ![Model comparison](figures/model_comparison.png)
 
-### Per-dataset results and transfer
+#### Per-dataset results and transfer
 
 | validation            | dataset   |   n_cells |   n_rows |   macro_cell_mae_raw_pp |   macro_cell_rmse_raw_pp |   macro_cell_mae_smoothed_pp |   macro_cell_rmse_smoothed_pp |
 |:----------------------|:----------|----------:|---------:|------------------------:|-------------------------:|-----------------------------:|------------------------------:|
@@ -89,7 +242,7 @@ Metrics below are means over cells, giving each cell equal weight. Pooled-row MA
 
 Linear regression is the strongest fixed family overall, rather than gradient boosting. The training-selected workflow's smoothing worsens cell-macro MAE from 3.72 to 3.92 points, approximately 0.20 points or 5.4%. Entire-dataset holdout rises from 3.72 to 13.89 points, about 3.7 times worse. NASA's cross-dataset error is 19.40 points. This supports calibration on target batteries, not an out-of-box claim.
 
-### Low-health accuracy
+#### Low-health accuracy
 
 | dataset   | band      |   n_rows |   n_cells |   raw_mae_pp |   raw_rmse_pp |   smoothed_mae_pp |
 |:----------|:----------|---------:|----------:|-------------:|--------------:|------------------:|
@@ -108,7 +261,7 @@ Linear regression is the strongest fixed family overall, rather than gradient bo
 
 The important below-70% region is weak: NASA 16.05 points MAE across 14 cells, Oxford 9.47 across only two observations from two cells, CALCE 2.06 across seven cells. At 70–80%, MAE is 3.14, 1.59 and 1.30 points for NASA, Oxford and CALCE respectively. Oxford's very sparse threshold evidence must not be hidden behind its 1.06-point whole-life average. A supplementary score weights observations at or below 80% three times as heavily; see `review/low_soh_weighted_error_per_cell.csv`.
 
-### Outliers and complete per-cell results
+#### Outliers and complete per-cell results
 
 B0048 has 28.05 points error on one eligible observation, B0042 14.67 on 55, and B0051 13.11 on two. B0042 RMSE is 25.79 points, showing severe individual failures. Cold exposure, changes in available capacity, documented source anomalies and sparse usable data are plausible explanations, not proven causes. No bad test cells were removed after inspecting their errors. Even the best selected-workflow cell averages are above 0.5 points, so there is no across-the-board suspiciously tiny result.
 
@@ -171,7 +324,7 @@ Cells without eligible core predictions:
 | nasa      | B0053     |                55 |                   0 |             13 |                  55 |
 | nasa      | B0056     |               102 |                   0 |            102 |                 102 |
 
-## RUL accuracy and censoring
+### RUL accuracy and censoring
 
 Linear and exponential trends fit the last 12 distinct predicted cycle observations. At least six are required unless current predicted SoH is already below threshold. The input is only the prediction prefix available at today. Flat/increasing trends and extrapolations beyond 20,000 source cycles return unavailable rather than a fabricated precise lifetime. A trailing five-observation median is also evaluated; it is never centred. Oxford's five observations can span hundreds of ageing cycles, unlike daily station observations.
 
@@ -186,7 +339,7 @@ End of life is the first valid reference crossing of 70% nominal-relative capaci
 | oxford    | observed_crossing                 |       2 |
 | oxford    | right_censored                    |       6 |
 
-### Original multi-point backtest, smoothed histories
+#### Original multi-point backtest, smoothed histories
 
 | validation            | dataset   | method      |   n_scored |   n_scored_cells |   mae_cycles |   rmse_cycles |   forecast_coverage |   n_censored_forecasts |   censor_bound_violation_rate |
 |:----------------------|:----------|:------------|-----------:|-----------------:|-------------:|--------------:|--------------------:|-----------------------:|------------------------------:|
@@ -207,7 +360,7 @@ Within-dataset linear MAE is 31.24 source cycles for NASA (20 scored anchors, si
 
 ![RUL backtest](figures/rul_backtest.png)
 
-### Early, middle and late life
+#### Early, middle and late life
 
 The additional review requested after initial modelling evaluates at approximately 20%, 50% and 85% of the interval to the observed endpoint. Future truth chooses evaluation anchors only; every forecast still receives only its past prediction prefix. Results below use raw histories and the predeclared linear trend. Percentage error is relative to actual remaining life at the latest available observation. Coverage matters because unavailable forecasts are not counted as successful predictions.
 
@@ -225,7 +378,7 @@ The additional review requested after initial modelling evaluates at approximate
 
 At late life, errors are 19.55 cycles and 290.7% mean remaining-life error for NASA (five of ten incident cells scorable), 114.47 cycles and 68.5% for CALCE (five of seven), and 2,576.05 cycles and 315.3% for Oxford (one of two). Small denominators and large errors make a reliable replacement-date claim indefensible.
 
-### Replacement decision backtest
+#### Replacement decision backtest
 
 The predeclared dashboard default is 14 scenario days, equivalent to 28 source cycles under the assumed two swaps/day and one source cycle/swap. An alarm predicts RUL at or below that horizon. The **first** alarm is premature if more than 28 cycles remain, timely if 0–28 remain, and late if the reference endpoint has passed. No alarm and no usable history remain separate. Repeated observations are not independent battery trials.
 
@@ -249,7 +402,7 @@ CALCE eventually produces an in-window alarm on all seven incident cells, but **
 
 ![First alerts](figures/first_alert_timing.png)
 
-### Capacity bumps and flat histories
+#### Capacity bumps and flat histories
 
 | dataset   |   upward_jumps_over_2pp |   affected_cells |
 |:----------|------------------------:|-----------------:|
@@ -259,7 +412,7 @@ CALCE eventually produces an in-window alarm on all seven incident cells, but **
 
 These are upward reference-capacity changes over two percentage points, not proof of electrochemical regeneration. Rest, measurement conditions and source artefacts can contribute. In the original within-dataset raw linear RUL backtest, 19 of 160 anchors have flat/increasing recent predictions, 16 lack sufficient history and two exceed the supported horizon. A short trend can become very steep after a downward fluctuation, producing premature alarms, or flat after recovery, producing no useful lifetime estimate. Thresholds or persistence rules must not be tuned on these same test events and then advertised as independently validated.
 
-## Feature sanity
+### Feature sanity
 
 Held-out within-cell permutation analysis finds upper-window timing is useful. CALCE's 3.9–4.0V interval raises MAE by about 7.42 points when permuted; Oxford's 4.1–4.18V interval by 4.38; NASA's total upper-window time by 0.82. Current C-rate has almost no within-cell permutation effect because charging current barely varies within a cell. This cannot prove that current or ambient temperature is irrelevant across protocols. Timing variables are correlated and individual permutations break their algebraic relation, so the rankings are diagnostic rather than a causal physical decomposition.
 
@@ -269,7 +422,7 @@ The statement “slower upper-voltage climb always means ageing” is unsafe. At
 
 On matched test rows, adding CV features improves CALCE MAE from 1.53 to 1.32 points, but worsens NASA from 3.35 to 4.40. Adding temperature worsens NASA from 5.11 to 5.84 and Oxford from 1.06 to 1.20. These are sensitivity comparisons with different available cohorts and training selections, not evidence that temperature is unimportant or that CV always helps. The simpler common model remains the most defensible starting point.
 
-## Limitations
+### Limitations
 
 - Only 49 laboratory cells were inventoried and 41 have any eligible common-feature predictions. Several NASA cell errors rest on one or two observations; effective sample size is cells, not 14,110 independent batteries. There are only three domains for cross-dataset evaluation and only two Oxford threshold crossings.
 - Nominal-relative discharge capacity is an imperfect health target when discharge rate, temperature, cutoff and prior charge completion vary. It measures available capacity under those tests, not solely irreversible ageing. Some source anomalies remain despite conservative, trace-based checks. There is no independent clean capacity ground truth for every problematic record.
@@ -282,7 +435,7 @@ On matched test rows, adding CV features improves CALCE MAE from 1.53 to 1.32 po
 - This is a centralised public-data prototype. Federated training, secure aggregation and company-to-company privacy protections are not implemented or tested. Do not claim a deployed federated product from this work.
 - Hyperparameters and feature thresholds were chosen without test-error optimisation, but the overall engineering and review are exploratory. A frozen prospective Baaz test is needed before performance commitments. The Kaggle mirrors also have incomplete provenance/licence metadata, recorded beside the original downloads.
 
-## What this would look like on Baaz's data
+### What this would look like on Baaz's data
 
 Required inputs: stable pack and station IDs, timestamps, series/parallel configuration, cell chemistry, rated Ah, per-cell voltages, pack charging current and charger setpoints, cell/module temperature channels with sensor locations, ambient/station temperature and cooling state, CC/CV transitions, cutoff conditions, and charger/BMS firmware and calibration versions. Swap logs need arrival SoC, departure SoC, preceding use/rest durations and the mapping of each pack across riders and stations. Outcomes need independent reference-capacity checks, repair/retirement decisions and classified failures. An existing BMS SoH estimate is a comparator, not automatically an independent label.
 
@@ -290,7 +443,7 @@ Additional features could include cell-voltage spread near full charge, imbalanc
 
 A pilot should compare against Baaz's existing BMS and maintenance policy, set acceptable inspection/false-alarm cost in advance, reserve complete packs/stations/time periods for a locked evaluation, and measure eligible-window coverage. A starting design might use 20–30 packs spanning health and conditions, with a substantial whole-pack holdout; that is a planning proposal, not a statistically established sample requirement. A learning curve and event count must determine expansion. Accurate RUL validation needs actual degradation follow-up, not merely many repeated charges from a handful of packs.
 
-## ROI inputs supported by evidence
+### ROI inputs supported by evidence
 
 | Input | Defensible incremental base-case value now | Evidence |
 |---|---:|---|
@@ -300,7 +453,7 @@ A pilot should compare against Baaz's existing BMS and maintenance policy, set a
 
 These are evidence-accounting values, not a claim that a future service can never create value. Any positive upside scenario must be labelled an unvalidated pilot target. Avoid treating the seven CALCE cells' eventual in-window alarms as seven field failures prevented. Quantify value against Baaz's current policy using avoided downtime and unnecessary replacement costs, then measure whether a new action rule improves them.
 
-## Defensible pitch claims
+### Defensible pitch claims
 
 - “Across 41 held-out laboratory cells with eligible charging windows, our charge-only workflow achieved 3.72 SoH percentage points cell-macro MAE. Dataset results ranged from 1.06 to 5.11 points, with individual failures.”
 - “The 14,110 eligible observations are repeated measurements of 41 cells, not 14,110 batteries.”
@@ -311,7 +464,7 @@ Do not claim accuracy on Baaz packs, reliable replacement dates, proven Delhi he
 
 Recommended headline: **“About 4 SoH percentage points MAE on 41 unseen lab cells.”** Place “14 points on unseen datasets; Baaz calibration required” beside it, not buried in an appendix. The conservative cell-macro 3.72 rounds to four; the pooled-row 1.82 is an attractive but less defensible headline. A service-sales headline should be a pilot question, not a replacement guarantee.
 
-## Tough questions from Baaz's engineers
+### Tough questions from Baaz's engineers
 
 1. **Does this work on our ~1kWh packs?** Not established. We need chemistry, topology and pack-level references. Weak-cell and power limitations matter beyond average cell capacity.
 2. **What happens when riders return packs at 40%, 35% or 5% SoC?** The method ignores the earlier charging segment when the observed voltage window is complete. It skips a charge that starts above the lower voltage or never reaches the upper voltage. Fleet coverage and real truncation robustness still need measurement.
@@ -322,7 +475,7 @@ Recommended headline: **“About 4 SoH percentage points MAE on 41 unseen lab ce
 7. **Why trust a replacement recommendation when RUL is poor?** You should not yet. The current lab first-alert policy fails its timing target. Start with inspection prioritisation, predefined costs and a prospective decision backtest.
 8. **Why pay us rather than extend your own BMS analytics?** Only incremental measured value can justify that. The public benchmark does not compare with Baaz's capable existing system. Agree that comparator and the commercial success criterion before the pilot.
 
-## Ranked next experiments
+### Ranked next experiments
 
 1. **Target-domain calibration learning curve.** Freeze source-trained models, calibrate on a small set of target cells/packs, and score on completely different target packs. Repeat across target-cell counts and keep a final locked holdout. This most directly tests the paid-pilot story. A public-data version can assess 0/1/2/4 target-cell calibration, but still cannot establish Baaz accuracy.
 2. **Partial-charge and sensor perturbation test.** Crop real charge traces at varying starts and endings, add voltage/current offsets and sampling gaps, and report both coverage and error. Keep perturbation settings independent of existing test errors. The current synthetic invariance test is a useful start, not this experiment's completion.
@@ -330,6 +483,6 @@ Recommended headline: **“About 4 SoH percentage points MAE on 41 unseen lab ce
 4. **Temperature/protocol stress holdout.** Evaluate NASA warm, cold and mixed-temperature groups separately, then collect target-station pack data above 45°C where relevant. Adding more low-temperature cells will not resolve the Delhi question. Current generic temperature features actually worsen held-out MAE, so redesign requires validation.
 5. **Pack-level reference and outcome study.** Obtain topology, imbalance, balancing and periodic independent usable-capacity/energy measurements. Track retirement and failure modes prospectively. This is slower than the first software experiments, but essential before life-extension, field-failure or energy-saving ROI claims.
 
-## Reproduction and artifacts
+### Reproduction and artifacts
 
 See [README](../README.md) for setup, pipeline and dashboard commands. `python scripts/run_all.py` generates inventory, data cache, validation, RUL, review and this report in order. The source data are external siblings in `../datasets`. All per-cell metrics, fold memberships, exclusions, RUL anchors, censoring status, alarm observations and event denominators are saved as CSV/JSON/Parquet under `data/processed` and `reports`. Figures are standalone PNGs under `reports/figures`.

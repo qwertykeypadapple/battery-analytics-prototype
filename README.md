@@ -158,8 +158,15 @@ python scripts/run_improvements.py E8
 python scripts/run_improvements.py E9
 python scripts/run_improvements.py report
 python scripts/fleet_forecast.py
+python scripts/update_results_summary.py
 python -m pytest -q
 ```
+
+The main `reports/results_summary.md` and `reports/skeptical_review.md` include
+the latest experiment and fleet-count findings above a clearly labelled frozen
+baseline appendix. Report-generation commands refresh these summaries when all
+new artifacts exist. `update_results_summary.py` refreshes only the written
+summaries, without fitting models or changing baseline metrics.
 
 Use `.venv/bin/python` in this existing workspace. The frozen artifacts must
 match the manifest; rebuild baseline experiments in a separate checkout when

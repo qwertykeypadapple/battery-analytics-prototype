@@ -383,6 +383,8 @@ See [README](../README.md) for setup, pipeline and dashboard commands. `python s
     # Standalone review retains the full evidence and per-cell appendix, not just highlights.
     review = summary.replace('# Battery analytics prototype: results summary', '# Skeptical review for the Baaz Bikes pitch', 1)
     (R / 'skeptical_review.md').write_text(review)
+    from battery_analytics.improvements.summary import sync_main_results
+    sync_main_results()
     print('Wrote results_summary.md, skeptical_review.md and seven figures.', flush=True)
 
 

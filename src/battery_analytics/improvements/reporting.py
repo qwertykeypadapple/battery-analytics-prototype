@@ -408,4 +408,6 @@ Covariance from one model is never grafted onto another. All views use held-out
 predictions. Interactive controls do not change saved validation experiments.
 '''
     (OUT/'results.md').write_text(text)
+    from .summary import sync_main_results
+    sync_main_results()
     print('Improvement report, ablation and scientific plots saved:',OUT/'results.md')

@@ -221,6 +221,8 @@ occurs in this script. See [preregistration.md](preregistration.md),
 [cell_audit.csv](cell_audit.csv) and [metrics.csv](metrics.csv).
 '''
     (OUT/'results.md').write_text(text)
+    from battery_analytics.improvements.summary import sync_main_results
+    sync_main_results()
     print('Matched LOCO mean count errors and signed bias:',totals)
     print('Saved',OUT/'results.md')
 
