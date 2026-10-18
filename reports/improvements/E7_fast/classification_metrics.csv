@@ -1,0 +1,7 @@
+validation,dataset,requested,available,tp,fp,fn,precision,recall_on_available,recall_including_abstentions,flagged_observed_eols,median_eol_flagged,median_eol_not_flagged
+leave_one_cell_out,calce,7,7,0,0,2,,0.0,0.0,0,,1050.3333333333333
+leave_one_cell_out,nasa,26,20,0,1,4,0.0,0.0,0.0,1,96.72865736456474,41.07998033553235
+leave_one_cell_out,oxford,8,8,1,0,2,1.0,0.3333333333333333,0.3333333333333333,0,,6143.66376354865
+leave_one_dataset_out,calce,7,7,0,1,0,0.0,,,1,1443.1666666666667,1030.3666666666666
+leave_one_dataset_out,nasa,26,20,0,0,16,,0.0,0.0,0,,41.11077353461528
+leave_one_dataset_out,oxford,8,8,0,0,0,,,,0,,6143.66376354865
