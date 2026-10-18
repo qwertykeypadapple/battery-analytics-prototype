@@ -1,0 +1,11 @@
+validation,dataset,cell_id
+leave_one_cell_out,nasa,B0048
+leave_one_cell_out,nasa,B0049
+leave_one_cell_out,nasa,B0051
+leave_one_cell_out,nasa,B0054
+leave_one_cell_out,nasa,B0055
+leave_one_dataset_out,nasa,B0048
+leave_one_dataset_out,nasa,B0049
+leave_one_dataset_out,nasa,B0051
+leave_one_dataset_out,nasa,B0054
+leave_one_dataset_out,nasa,B0055
