@@ -172,3 +172,114 @@ def interval_metrics(p,path):
 def e6():
     from .probability import run
     run()
+    p=pd.read_parquet(OUT/'E6_probabilistic/predictions.parquet')
+    p['experiment']='E6_probabilistic'
+    save('E6_probabilistic',p)
+
+
+def e7():
+    from .tracking import rate_table
+    refs=pd.read_parquet(ROOT/'data/processed/capacity_references.parquet')
+    p=pd.read_parquet(OUT/'E5_filter/predictions.parquet')
+    eols=pd.read_csv(BASE/'end_of_life.csv'); eols['group_id']=eols.dataset+':'+eols.cell_id
+    rates=rate_table(refs,set(eols.group_id)); global_cut=rates.groupby('dataset').rate_per_cycle.quantile(.75)
+    cases=[]
+    for f in folds():
+        training=rates[rates.group_id.isin(f['outer_train_cells'])]
+        cutoff=float(training.rate_per_cycle.quantile(.75))
+        for gid in f['outer_test_cells']:
+            h=p[p.validation.eq(f['validation'])&p.group_id.eq(gid)].sort_values(['cycle_index','charge_end_time_s'])
+            # Each E4/E5 history starts after the fixed five-charge warmup.
+            r=rates[rates.group_id.eq(gid)]
+            e=eols[eols.group_id.eq(gid)].iloc[0]
+            available=len(h)>=20
+            state=h.iloc[19] if available else None
+            true_rate=float(r.rate_per_cycle.iloc[0]) if len(r) else np.nan
+            cases.append(dict(validation=f['validation'],dataset=e.dataset,cell_id=e.cell_id,group_id=gid,
+                available=available,decision_cycle=float(state.cycle_index) if available else np.nan,
+                estimated_rate=float(-state.rate_per_cycle) if available else np.nan,
+                rate_cutoff=cutoff,flag=bool(-state.rate_per_cycle>=cutoff) if available else False,
+                true_rate=true_rate,true_fast=bool(true_rate>=cutoff) if np.isfinite(true_rate) else np.nan,
+                descriptive_full_fleet_quartile=bool(true_rate>=global_cut[e.dataset]) if np.isfinite(true_rate) else np.nan,
+                censoring=e.censoring,eol_cycle=e.eol_cycle))
+    c=pd.DataFrame(cases); out=OUT/'E7_fast'; out.mkdir(exist_ok=True)
+    c.to_csv(out/'cell_flags.csv',index=False)
+    summaries=[]
+    for key,g in c.groupby(['validation','dataset']):
+        a=g[g.available&g.true_fast.notna()]; truth=a.true_fast.astype(bool); flag=a.flag.astype(bool)
+        tp=int((flag&truth).sum()); fp=int((flag&~truth).sum()); fn=int((~flag&truth).sum())
+        all_fast=g.true_fast.eq(True).sum()
+        summaries.append(dict(validation=key[0],dataset=key[1],requested=len(g),available=len(a),
+            tp=tp,fp=fp,fn=fn,precision=tp/(tp+fp) if tp+fp else np.nan,recall_on_available=tp/(tp+fn) if tp+fn else np.nan,
+            recall_including_abstentions=tp/all_fast if all_fast else np.nan,
+            flagged_observed_eols=int((a.flag&a.censoring.eq('observed_crossing')).sum()),
+            median_eol_flagged=float(a[a.flag&a.censoring.eq('observed_crossing')].eol_cycle.median()),
+            median_eol_not_flagged=float(a[~a.flag&a.censoring.eq('observed_crossing')].eol_cycle.median())))
+    pd.DataFrame(summaries).to_csv(out/'classification_metrics.csv',index=False)
+    p=p.merge(c[['validation','group_id','decision_cycle','flag','rate_cutoff']],on=['validation','group_id'],validate='m:1')
+    p['fast_degradation_flag']=p.flag&(p.cycle_index>=p.decision_cycle)
+    p['experiment']='E7_fast'
+    save('E7_fast',p)
+    print(pd.DataFrame(summaries).to_string(index=False))
+
+
+def e8():
+    d=data(); features=build_features(d,'ica')
+    coverage=d[['cycle_uid','dataset','cell_id']].merge(features,on='cycle_uid')
+    coverage.groupby(['dataset','cell_id']).agg(n_rows=('cycle_uid','size'),peaks=('ica_peak_present','sum'),
+        peak_coverage=('ica_peak_present','mean')).reset_index().to_csv(OUT/'E8_peak_coverage.csv',index=False)
+    combined('E8_forced_ica',True,True)
+    combined('E8_optional_ica',True,False)
+
+
+def calibration_offset(calibration, predictions):
+    """Only designated calibration cells supply labels, equally weighted by cell."""
+    if not len(calibration): return 0.
+    errors=pd.DataFrame({'cell':calibration.group_id.to_numpy(),'residual':calibration.soh.to_numpy()-np.asarray(predictions)})
+    return float(errors.groupby('cell').residual.mean().mean())
+
+
+def e9():
+    import joblib
+    from .core import aggregate
+    d=enhanced_data(); out=OUT/'E9_calibration'; out.mkdir(exist_ok=True)
+    columns=Q_FEATURES+['cc_current_c']; choices=[]; metrics=[]; outputs=[]
+    for dataset,target in d.groupby('dataset'):
+        training=d[d.dataset.ne(dataset)]
+        source=fit(training,columns)
+        joblib.dump(source,out/f'source_{dataset}.joblib')
+        target=target.copy(); target['source_prediction']=source.predict(target[columns])
+        ids=np.array(sorted(target.group_id.unique()))
+        locked=np.random.default_rng(42).permutation(ids)[-1]
+        pool=ids[ids!=locked]
+        for seed in range(42,47):
+            order=np.random.default_rng(seed).permutation(pool)
+            for k in [0,1,2,4]:
+                calibration_ids=list(order[:k]); evaluation_ids=list(order[k:])
+                calibration=target[target.group_id.isin(calibration_ids)]
+                offset=calibration_offset(calibration,calibration.source_prediction)
+                choices.append(dict(dataset=dataset,seed=seed,k=k,locked_cell=str(locked),calibration_cells=calibration_ids,
+                    development_test_cells=evaluation_ids,offset_soh=offset,source_training_cells=sorted(training.group_id.unique())))
+                for phase,eval_ids in [('development',evaluation_ids),('locked',[locked])]:
+                    test=target[target.group_id.isin(eval_ids)]
+                    pred=test[META].copy(); pred['prediction']=test.source_prediction+offset
+                    pred['source_prediction']=test.source_prediction
+                    pred['validation']='leave_one_dataset_out'; pred['experiment']=f'E9_k{k}_seed{seed}_{phase}'
+                    pred['k']=k; pred['seed']=seed; pred['phase']=phase; outputs.append(pred)
+                    from battery_analytics.evaluation import causal_median
+                    m=metric_rows(causal_median(pred)); m['k']=k; m['seed']=seed; m['phase']=phase; metrics.append(m)
+                    matched=pred.copy(); matched['prediction']=test.source_prediction
+                    matched['experiment']=pred.experiment.iloc[0]+'_matched_k0'
+                    m=metric_rows(causal_median(matched)); m['k']=k; m['seed']=seed; m['phase']=phase; metrics.append(m)
+        print('E9 calibration:',dataset,'locked:',locked,flush=True)
+    pd.concat(outputs,ignore_index=True).to_parquet(out/'predictions.parquet',index=False)
+    m=pd.concat(metrics,ignore_index=True); m.to_csv(out/'metrics.csv',index=False); write_json(out/'choices.json',choices)
+    summary=m[m.level.eq('overall')&m.signal.eq('raw')&~m.experiment.str.endswith('_matched_k0')].copy()
+    # Each overall row above contains just one target dataset.
+    idmap={f'E9_k{k}_seed{seed}_{phase}':dataset for dataset in [] for k in [] for seed in [] for phase in []}
+    # Use dataset-level rows so target identity is explicit, then aggregate repeats.
+    summary=m[m.level.eq('dataset')&m.signal.eq('raw')&~m.experiment.str.endswith('_matched_k0')]
+    summary=summary.groupby(['phase','dataset','k']).agg(mean_mae_pp=('cell_macro_mae_pp','mean'),sd_mae_pp=('cell_macro_mae_pp','std'),
+        min_mae_pp=('cell_macro_mae_pp','min'),max_mae_pp=('cell_macro_mae_pp','max'),mean_test_cells=('n_cells','mean')).reset_index()
+    summary.to_csv(out/'learning_curve.csv',index=False)
+    print(summary.to_string(index=False))
