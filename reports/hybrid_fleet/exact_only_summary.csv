@@ -1,0 +1,41 @@
+Protocol,Fleet,Method,Exact P / R %,Exact defined P / R cases
+LOCO,calce,Age,— / 0.0,0 / 9
+LOCO,calce,Charge RUL,— / 0.0,0 / 9
+LOCO,calce,Charge SoH,— / 0.0,0 / 9
+LOCO,calce,Cycle SoH,— / 0.0,0 / 9
+LOCO,calce,Random,— / 0.0,0 / 9
+LOCO,mixed,Age,— / —,0 / 0
+LOCO,mixed,Charge RUL,— / —,0 / 0
+LOCO,mixed,Charge SoH,— / —,0 / 0
+LOCO,mixed,Cycle SoH,— / —,0 / 0
+LOCO,mixed,Random,— / —,0 / 0
+LOCO,nasa,Age,— / —,0 / 0
+LOCO,nasa,Charge RUL,— / —,0 / 0
+LOCO,nasa,Charge SoH,— / —,0 / 0
+LOCO,nasa,Cycle SoH,— / —,0 / 0
+LOCO,nasa,Random,— / —,0 / 0
+LOCO,oxford,Age,— / —,0 / 0
+LOCO,oxford,Charge RUL,— / —,0 / 0
+LOCO,oxford,Charge SoH,— / —,0 / 0
+LOCO,oxford,Cycle SoH,— / —,0 / 0
+LOCO,oxford,Random,— / —,0 / 0
+LODO,calce,Age,— / 0.0,0 / 9
+LODO,calce,Charge RUL,— / 0.0,0 / 9
+LODO,calce,Charge SoH,— / 0.0,0 / 9
+LODO,calce,Cycle SoH,— / 0.0,0 / 9
+LODO,calce,Random,— / 0.0,0 / 9
+LODO,mixed,Age,— / —,0 / 0
+LODO,mixed,Charge RUL,— / —,0 / 0
+LODO,mixed,Charge SoH,— / —,0 / 0
+LODO,mixed,Cycle SoH,— / —,0 / 0
+LODO,mixed,Random,— / —,0 / 0
+LODO,nasa,Age,— / —,0 / 0
+LODO,nasa,Charge RUL,— / —,0 / 0
+LODO,nasa,Charge SoH,— / —,0 / 0
+LODO,nasa,Cycle SoH,— / —,0 / 0
+LODO,nasa,Random,— / —,0 / 0
+LODO,oxford,Age,— / —,0 / 0
+LODO,oxford,Charge RUL,— / —,0 / 0
+LODO,oxford,Charge SoH,— / —,0 / 0
+LODO,oxford,Cycle SoH,— / —,0 / 0
+LODO,oxford,Random,— / —,0 / 0
