@@ -1,0 +1,9 @@
+variant,model,dataset,n_rows,n_cells,macro_cell_mae_pp
+temperature,core_on_matched_rows,nasa,1680,26,5.1100000727848105
+temperature,temperature,nasa,1680,26,5.841914220290415
+temperature,core_on_matched_rows,oxford,519,8,1.0630455192979396
+temperature,temperature,oxford,519,8,1.2019379687389384
+cv_no_temperature,core_on_matched_rows,calce,11545,7,1.5337917582736562
+cv_no_temperature,cv_no_temperature,calce,11545,7,1.3231540840971587
+cv_no_temperature,core_on_matched_rows,nasa,1674,21,3.3476867992231623
+cv_no_temperature,cv_no_temperature,nasa,1674,21,4.402975116573355

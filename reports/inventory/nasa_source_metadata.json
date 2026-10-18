@@ -1,0 +1,26 @@
+{
+  "info": {
+    "datasetId": 2553751,
+    "datasetSlug": "nasa-battery-dataset",
+    "ownerUser": "patrickfleith",
+    "usabilityRating": 0.9411764705882353,
+    "totalViews": 146340,
+    "totalVotes": 147,
+    "totalDownloads": 39449,
+    "title": "NASA Battery Dataset ",
+    "subtitle": "Can you predict the remaining useful life (RUL) of NASA batteries?",
+    "description": "A set of Li-ion batteries were run through different operational profiles (charge, discharge and impedance) at various temperatures. Impedance measurement was carried out through an electrochemical impedance spectroscopy (EIS) frequency. \n\nRepeated charge and discharge cycles result in accelerated aging of the batteries while impedance measurements provide insight into the internal battery parameters that change as aging progresses. The experiments were stopped when the batteries reached end-of-life (EOL) criteria. These datasets can be used for the prediction of both remaining charge (for a given discharge cycle) and remaining useful life (RUL). Data are in Batch of 6 experiments, data provided in .mat files with experiment details in associated READEME.txt - ",
+    "keywords": [
+      "earth and nature",
+      "electronics",
+      "time series analysis"
+    ],
+    "licenses": [
+      {
+        "name": "copyright-authors"
+      }
+    ],
+    "expectedUpdateFrequency": "never",
+    "userSpecifiedSources": "B. Saha and K. Goebel (2007), Prognosis CoE, NASA Ames"
+  }
+}

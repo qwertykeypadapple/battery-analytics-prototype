@@ -1,0 +1,10 @@
+{
+  "horizon_cycles": 28.0,
+  "horizon_scenario_days": 14,
+  "model": "Predeclared linear trend on raw or trailing-median held-out SoH histories.",
+  "event": "First alarm per cell. Before 14-day horizon = premature, within horizon = timely, at/after endpoint = late.",
+  "endpoint": "First 70% nominal-relative laboratory discharge-capacity crossing, not a field failure.",
+  "right_censoring": "Known negatives only when the last above-threshold reference is at least one horizon after today.",
+  "left_censoring": "Already-below-threshold cells are not scored as incident events.",
+  "sampling": "Oxford is sampled around every 100 ageing cycles, coarser than the 28-cycle alert window."
+}

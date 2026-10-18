@@ -1,0 +1,13 @@
+validation,signal,dataset,tp_observations,fp_observations,fn_observations,tn_observations,observation_recall,observation_false_positive_rate,observation_precision,observed_threshold_events,timely_first_alerts,premature_first_alerts,late_first_alerts,no_alerts,no_eligible_history,timely_first_alert_rate,any_timely_alert_events,events_with_timely_observation,median_first_alert_lead_days,median_timely_warning_days
+leave_one_cell_out,raw,calce,84,206,103,7229,0.44919786096256686,0.027706792199058507,0.2896551724137931,7,0,7,0,0,0,0.0,7,7,124.5,13.583333333333371
+leave_one_cell_out,raw,nasa,98,59,74,391,0.5697674418604651,0.13111111111111112,0.6242038216560509,10,0,6,2,0,2,0.0,5,7,16.539990167766174,12.133665374819117
+leave_one_cell_out,raw,oxford,0,0,0,508,,0.0,,2,0,0,0,2,0,0.0,0,0,,
+leave_one_cell_out,smoothed,calce,77,169,110,7266,0.4117647058823529,0.02273032952252858,0.3130081300813008,7,1,6,0,0,0,0.14285714285714285,7,7,62.5,13.583333333333371
+leave_one_cell_out,smoothed,nasa,88,50,84,400,0.5116279069767442,0.1111111111111111,0.6376811594202898,10,2,3,2,1,2,0.2,5,7,4.005529286957337,11.133665374819117
+leave_one_cell_out,smoothed,oxford,0,0,0,508,,0.0,,2,0,0,0,2,0,0.0,0,0,,
+leave_one_dataset_out,raw,calce,131,286,56,7149,0.7005347593582888,0.038466711499663755,0.31414868105515587,7,0,7,0,0,0,0.0,7,7,486.75,13.699999999999989
+leave_one_dataset_out,raw,nasa,56,155,116,295,0.32558139534883723,0.34444444444444444,0.26540284360189575,10,0,2,3,3,2,0.0,2,7,-2.8663346251808832,13.515061427591023
+leave_one_dataset_out,raw,oxford,0,0,0,508,,0.0,,2,0,0,0,2,0,0.0,0,0,,
+leave_one_dataset_out,smoothed,calce,124,227,63,7208,0.6631016042780749,0.030531271015467383,0.35327635327635326,7,0,7,0,0,0,0.0,7,7,486.75,13.583333333333371
+leave_one_dataset_out,smoothed,nasa,56,152,116,298,0.32558139534883723,0.3377777777777778,0.2692307692307692,10,0,2,3,3,2,0.0,2,7,-3.8663346251808832,13.515061427591023
+leave_one_dataset_out,smoothed,oxford,0,0,0,508,,0.0,,2,0,0,0,2,0,0.0,0,0,,

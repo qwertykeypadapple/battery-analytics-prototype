@@ -1,0 +1,19 @@
+{
+  "files_scanned": 7599,
+  "unreadable_files": 0,
+  "cells": {
+    "oxford": 8,
+    "calce": 7,
+    "nasa": 34
+  },
+  "anomaly_counts": {
+    "nasa:nonfinite_Voltage_measured": 25,
+    "nasa:nonfinite_Current_measured": 25,
+    "nasa:nonfinite_Temperature_measured": 25,
+    "calce:short_cycle": 2,
+    "calce:missing_or_nonpositive_discharge_capacity": 65,
+    "calce:capacity_below_10pct_nominal_review": 4,
+    "nasa:missing_or_nonpositive_capacity": 44,
+    "nasa:capacity_below_10pct_nominal_review": 187
+  }
+}

@@ -1,0 +1,13 @@
+Feature,Definition at current configuration,Unit,Use
+time_lower_middle_s,3.9 to 4.0 V charge time,s,Common
+time_middle_upper_middle_s,4.0 to 4.1 V charge time,s,Common
+time_upper_middle_upper_s,4.1 to 4.18 V charge time,s,Common
+time_lower_upper_s,3.9 to 4.18 V total charge time,s,Common; sum of previous three
+cc_current_c,Median charging current / rated Ah,1/h (C-rate),Common
+window_mean_temp_c,Mean cell temperature in upper window,°C,Temperature variant
+window_temp_rise_c,Temperature change from lower to upper crossing,°C,Temperature variant
+ambient_temp_c,Known charging ambient setting,°C,"Temperature variant, NASA/Oxford only"
+time_lower_cv_s,Lower crossing to 4.19 V band,s,CV variant
+cv_duration_s,Duration in near-limit voltage band with observed taper,s,CV variant
+cv_taper_slope_c_per_s,Elapsed-time-weighted current taper slope,C-rate/s,CV variant
+cv_tau_s,Time constant from time-weighted log-current fit,s,CV variant

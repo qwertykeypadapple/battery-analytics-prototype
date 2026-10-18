@@ -1,0 +1,20 @@
+{
+  "end_of_life_soh": 0.7,
+  "lookback_points": 12,
+  "min_points": 6,
+  "maximum_horizon_cycles": 20000,
+  "minimum_fade_per_cycle": 1e-06,
+  "swaps_per_day": 2.0,
+  "test_cycles_per_swap": 1.0,
+  "today_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "primary_signal": "smoothed",
+  "censoring": "No exact RUL error for right-censored or already-below-threshold cells.",
+  "endpoint": "First observed 70% reference crossing, interpolated between adjacent valid checks.",
+  "days": "Scenario conversion only. Two swaps/day and one source laboratory cycle per swap by default."
+}

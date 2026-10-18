@@ -1,0 +1,21 @@
+{
+  "info": {
+    "datasetId": 8877719,
+    "datasetSlug": "oxford-dataset",
+    "ownerUser": "sudhaveerapaneni",
+    "usabilityRating": 0.3125,
+    "totalViews": 2094,
+    "totalVotes": 2,
+    "totalDownloads": 374,
+    "title": "Oxford Dataset",
+    "subtitle": "",
+    "description": "This is Oxford Battery degradation dataset. \n\nLithium-ion (Li-ion) batteries are the most popular energy storage technology in consumer electronics and electric vehicles and are increasingly applied in stationary storage systems. Yet, concerns about safety and reliability remain major obstacles, which must be addressed in order to improve the acceptance of this technology. The gradual degradation of Li-ion cells over time lies at the heart of this problem. Time, usage and environmental conditions lead to performance deterioration and cell failures, which, in rare cases, can be catastrophic due to fires or explosions. The physical and chemical mechanisms responsible for degradation are numerous, complex and interdependent. Our understanding of degradation and failure of Li-ion cells is still very limited and more limited yet are reliable and practical methods for the detection and prediction of these phenomena. ",
+    "licenses": [
+      {
+        "name": "unknown"
+      }
+    ],
+    "expectedUpdateFrequency": "not specified",
+    "userSpecifiedSources": "https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac"
+  }
+}

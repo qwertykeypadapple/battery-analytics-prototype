@@ -1,0 +1,38 @@
+data_root: ../datasets
+seed: 42
+features:
+  min_samples: 12
+  min_positive_current_c: 0.003
+  max_window_duration_s: 30000
+  max_gap_s: 600
+  min_cv_samples: 8
+  max_cv_gap_fraction: 0.40
+  voltage_smoothing_samples: 3
+  datasets:
+    nasa: {lower_v: 3.90, middle_v: 4.00, upper_middle_v: 4.10, upper_v: 4.18, cv_v: 4.19, voltage_limit_v: 4.20}
+    oxford: {lower_v: 3.90, middle_v: 4.00, upper_middle_v: 4.10, upper_v: 4.18, cv_v: 4.19, voltage_limit_v: 4.20}
+    calce: {lower_v: 3.90, middle_v: 4.00, upper_middle_v: 4.10, upper_v: 4.18, cv_v: 4.19, voltage_limit_v: 4.20}
+quality:
+  min_discharge_samples: 10
+  maximum_capacity_multiple: 1.5
+  maximum_integration_relative_error: 0.20
+  capacity_absolute_tolerance_ah: 0.03
+  maximum_label_temperature_difference_c: 2
+  charge_cutoff_a: {nasa: 0.020, calce: 0.050}
+validation:
+  smoothing_points: 5
+  validation_cell_fraction: 0.25
+  random_forest_trees: 100
+rul:
+  end_of_life_soh: 0.70
+  lookback_points: 12
+  min_points: 6
+  maximum_horizon_cycles: 20000
+  minimum_fade_per_cycle: 0.000001
+  swaps_per_day: 2.0
+  test_cycles_per_swap: 1.0
+  today_fractions: [0.10, 0.25, 0.50, 0.75, 0.90]
+dashboard:
+  watch_soh: 0.80
+  replace_soon_days: 14
+  watch_days: 45

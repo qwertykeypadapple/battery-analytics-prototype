@@ -1,0 +1,2504 @@
+[
+  {
+    "dataset": "nasa",
+    "source": "00848.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "00848.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "00848.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01011.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01011.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01011.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01230.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01230.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01230.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01352.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01352.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01352.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01529.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01529.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01529.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01641.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01641.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01641.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "01804.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01804.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01804.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "01916.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01916.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "01916.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02082.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02082.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02082.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02412.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02412.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02412.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02524.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02524.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02524.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02690.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02690.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "02690.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03158.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03158.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03158.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03238.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03238.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03238.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03350.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03350.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03350.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "03513.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03513.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03513.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 57
+  },
+  {
+    "dataset": "nasa",
+    "source": "03625.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03625.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03625.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03791.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03791.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "03791.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04079.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04079.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04079.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04159.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04159.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04159.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "04266.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04266.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04266.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04328.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04328.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04328.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04390.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04390.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04390.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04452.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04452.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "04452.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 1
+  },
+  {
+    "dataset": "nasa",
+    "source": "06467.csv",
+    "issue": "nonfinite_Voltage_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "06467.csv",
+    "issue": "nonfinite_Current_measured",
+    "count": 2
+  },
+  {
+    "dataset": "nasa",
+    "source": "06467.csv",
+    "issue": "nonfinite_Temperature_measured",
+    "count": 2
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 147.0,
+    "issue": "short_cycle",
+    "count": 4
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 147.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 427.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 517.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 533.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 633.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 850.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 1071.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 1288.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-16",
+    "cycle_index": 1666.0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1615.0,
+    "issue": "short_cycle",
+    "count": 3
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 86.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 92.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 182.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 295.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 407.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1091.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1219.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1226.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1524.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1615.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-25",
+    "cycle_index": 1353.0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 145.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 152.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 264.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 603.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 854.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 925.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1065.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1084.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1192.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1308.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1363.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1401.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-33",
+    "cycle_index": 1551.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 92.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 100.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 538.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 706.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 990.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 1117.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 1375.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 1384.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-34",
+    "cycle_index": 1411.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 95.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 248.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 256.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 423.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 589.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 931.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 1358.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 1427.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 1614.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 1647.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-36",
+    "cycle_index": 1821.0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 95.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 248.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 256.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 588.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 762.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-37",
+    "cycle_index": 931.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 94.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 247.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 255.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 564.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 905.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 1591.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 1601.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 1629.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 1811.0,
+    "issue": "missing_or_nonpositive_discharge_capacity"
+  },
+  {
+    "dataset": "calce",
+    "cell_id": "CX2-38",
+    "cycle_index": 1400.0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0047",
+    "source": "00051.csv",
+    "test_id": 50,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0047",
+    "source": "00133.csv",
+    "test_id": 132,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0047",
+    "source": "00165.csv",
+    "test_id": 164,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0045",
+    "source": "00235.csv",
+    "test_id": 50,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0045",
+    "source": "00349.csv",
+    "test_id": 164,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0048",
+    "source": "00419.csv",
+    "test_id": 50,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0048",
+    "source": "00501.csv",
+    "test_id": 132,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0048",
+    "source": "00533.csv",
+    "test_id": 164,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0046",
+    "source": "00603.csv",
+    "test_id": 50,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0046",
+    "source": "00685.csv",
+    "test_id": 132,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0046",
+    "source": "00717.csv",
+    "test_id": 164,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00751.csv",
+    "test_id": 14,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00839.csv",
+    "test_id": 102,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00843.csv",
+    "test_id": 106,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00845.csv",
+    "test_id": 108,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00847.csv",
+    "test_id": 110,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00849.csv",
+    "test_id": 112,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00852.csv",
+    "test_id": 115,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00854.csv",
+    "test_id": 117,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00856.csv",
+    "test_id": 119,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00858.csv",
+    "test_id": 121,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00860.csv",
+    "test_id": 123,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00864.csv",
+    "test_id": 127,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00866.csv",
+    "test_id": 129,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00868.csv",
+    "test_id": 131,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00870.csv",
+    "test_id": 133,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00872.csv",
+    "test_id": 135,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00876.csv",
+    "test_id": 139,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00878.csv",
+    "test_id": 141,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00880.csv",
+    "test_id": 143,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00882.csv",
+    "test_id": 145,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00884.csv",
+    "test_id": 147,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00888.csv",
+    "test_id": 151,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00890.csv",
+    "test_id": 153,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00892.csv",
+    "test_id": 155,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00894.csv",
+    "test_id": 157,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00896.csv",
+    "test_id": 159,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00900.csv",
+    "test_id": 163,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00904.csv",
+    "test_id": 167,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00906.csv",
+    "test_id": 169,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00908.csv",
+    "test_id": 171,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00910.csv",
+    "test_id": 173,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00912.csv",
+    "test_id": 175,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00916.csv",
+    "test_id": 179,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00918.csv",
+    "test_id": 181,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00920.csv",
+    "test_id": 183,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00922.csv",
+    "test_id": 185,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00924.csv",
+    "test_id": 187,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00928.csv",
+    "test_id": 191,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00930.csv",
+    "test_id": 193,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00932.csv",
+    "test_id": 195,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00934.csv",
+    "test_id": 197,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00936.csv",
+    "test_id": 199,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00940.csv",
+    "test_id": 203,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00942.csv",
+    "test_id": 205,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00944.csv",
+    "test_id": 207,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00946.csv",
+    "test_id": 209,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0043",
+    "source": "00948.csv",
+    "test_id": 211,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0039",
+    "source": "01109.csv",
+    "test_id": 0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0039",
+    "source": "01115.csv",
+    "test_id": 6,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01544.csv",
+    "test_id": 14,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01632.csv",
+    "test_id": 102,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01636.csv",
+    "test_id": 106,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01638.csv",
+    "test_id": 108,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01640.csv",
+    "test_id": 110,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01642.csv",
+    "test_id": 112,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01645.csv",
+    "test_id": 115,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01647.csv",
+    "test_id": 117,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01649.csv",
+    "test_id": 119,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01651.csv",
+    "test_id": 121,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01653.csv",
+    "test_id": 123,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01657.csv",
+    "test_id": 127,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01659.csv",
+    "test_id": 129,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01661.csv",
+    "test_id": 131,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01663.csv",
+    "test_id": 133,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01665.csv",
+    "test_id": 135,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01669.csv",
+    "test_id": 139,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01671.csv",
+    "test_id": 141,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01673.csv",
+    "test_id": 143,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01675.csv",
+    "test_id": 145,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01677.csv",
+    "test_id": 147,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01681.csv",
+    "test_id": 151,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01683.csv",
+    "test_id": 153,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01685.csv",
+    "test_id": 155,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01687.csv",
+    "test_id": 157,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01689.csv",
+    "test_id": 159,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01693.csv",
+    "test_id": 163,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01697.csv",
+    "test_id": 167,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01699.csv",
+    "test_id": 169,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01701.csv",
+    "test_id": 171,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01703.csv",
+    "test_id": 173,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01705.csv",
+    "test_id": 175,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01709.csv",
+    "test_id": 179,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01711.csv",
+    "test_id": 181,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01713.csv",
+    "test_id": 183,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01715.csv",
+    "test_id": 185,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01717.csv",
+    "test_id": 187,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01721.csv",
+    "test_id": 191,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01723.csv",
+    "test_id": 193,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01725.csv",
+    "test_id": 195,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01727.csv",
+    "test_id": 197,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01729.csv",
+    "test_id": 199,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01733.csv",
+    "test_id": 203,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01735.csv",
+    "test_id": 205,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01737.csv",
+    "test_id": 207,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01739.csv",
+    "test_id": 209,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0042",
+    "source": "01741.csv",
+    "test_id": 211,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0033",
+    "source": "02413.csv",
+    "test_id": 0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "02996.csv",
+    "test_id": 0,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "02999.csv",
+    "test_id": 3,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03001.csv",
+    "test_id": 5,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03003.csv",
+    "test_id": 7,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03005.csv",
+    "test_id": 9,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03007.csv",
+    "test_id": 11,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03011.csv",
+    "test_id": 15,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03013.csv",
+    "test_id": 17,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03015.csv",
+    "test_id": 19,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03017.csv",
+    "test_id": 21,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03019.csv",
+    "test_id": 23,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03023.csv",
+    "test_id": 27,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03025.csv",
+    "test_id": 29,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03027.csv",
+    "test_id": 31,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03029.csv",
+    "test_id": 33,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03031.csv",
+    "test_id": 35,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03035.csv",
+    "test_id": 39,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03037.csv",
+    "test_id": 41,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03039.csv",
+    "test_id": 43,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03041.csv",
+    "test_id": 45,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03043.csv",
+    "test_id": 47,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03047.csv",
+    "test_id": 51,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03051.csv",
+    "test_id": 55,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03053.csv",
+    "test_id": 57,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03055.csv",
+    "test_id": 59,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03057.csv",
+    "test_id": 61,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03059.csv",
+    "test_id": 63,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03063.csv",
+    "test_id": 67,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03065.csv",
+    "test_id": 69,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03067.csv",
+    "test_id": 71,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03069.csv",
+    "test_id": 73,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03071.csv",
+    "test_id": 75,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03075.csv",
+    "test_id": 79,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03077.csv",
+    "test_id": 81,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03079.csv",
+    "test_id": 83,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03081.csv",
+    "test_id": 85,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03083.csv",
+    "test_id": 87,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03087.csv",
+    "test_id": 91,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03089.csv",
+    "test_id": 93,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03091.csv",
+    "test_id": 95,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03093.csv",
+    "test_id": 97,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0041",
+    "source": "03095.csv",
+    "test_id": 99,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03253.csv",
+    "test_id": 14,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03341.csv",
+    "test_id": 102,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03345.csv",
+    "test_id": 106,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03347.csv",
+    "test_id": 108,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03349.csv",
+    "test_id": 110,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03351.csv",
+    "test_id": 112,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03354.csv",
+    "test_id": 115,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03356.csv",
+    "test_id": 117,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03358.csv",
+    "test_id": 119,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03360.csv",
+    "test_id": 121,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03362.csv",
+    "test_id": 123,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03366.csv",
+    "test_id": 127,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03368.csv",
+    "test_id": 129,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03370.csv",
+    "test_id": 131,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03372.csv",
+    "test_id": 133,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03374.csv",
+    "test_id": 135,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03378.csv",
+    "test_id": 139,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03380.csv",
+    "test_id": 141,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03382.csv",
+    "test_id": 143,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03384.csv",
+    "test_id": 145,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03386.csv",
+    "test_id": 147,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03390.csv",
+    "test_id": 151,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03392.csv",
+    "test_id": 153,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03394.csv",
+    "test_id": 155,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03396.csv",
+    "test_id": 157,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03398.csv",
+    "test_id": 159,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03402.csv",
+    "test_id": 163,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03406.csv",
+    "test_id": 167,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03408.csv",
+    "test_id": 169,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03410.csv",
+    "test_id": 171,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03412.csv",
+    "test_id": 173,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03414.csv",
+    "test_id": 175,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03418.csv",
+    "test_id": 179,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03420.csv",
+    "test_id": 181,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03422.csv",
+    "test_id": 183,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03424.csv",
+    "test_id": 185,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03426.csv",
+    "test_id": 187,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03430.csv",
+    "test_id": 191,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03432.csv",
+    "test_id": 193,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03434.csv",
+    "test_id": 195,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03436.csv",
+    "test_id": 197,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03438.csv",
+    "test_id": 199,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03442.csv",
+    "test_id": 203,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03444.csv",
+    "test_id": 205,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03446.csv",
+    "test_id": 207,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03448.csv",
+    "test_id": 209,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0044",
+    "source": "03450.csv",
+    "test_id": 211,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0049",
+    "source": "04297.csv",
+    "test_id": 40,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04329.csv",
+    "test_id": 10,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04351.csv",
+    "test_id": 32,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04359.csv",
+    "test_id": 40,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04361.csv",
+    "test_id": 42,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04365.csv",
+    "test_id": 46,
+    "issue": "capacity_below_10pct_nominal_review"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04371.csv",
+    "test_id": 52,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04373.csv",
+    "test_id": 54,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04375.csv",
+    "test_id": 56,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0050",
+    "source": "04377.csv",
+    "test_id": 58,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04391.csv",
+    "test_id": 10,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04395.csv",
+    "test_id": 14,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04397.csv",
+    "test_id": 16,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04399.csv",
+    "test_id": 18,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04401.csv",
+    "test_id": 20,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04403.csv",
+    "test_id": 22,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04407.csv",
+    "test_id": 26,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04409.csv",
+    "test_id": 28,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04411.csv",
+    "test_id": 30,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04413.csv",
+    "test_id": 32,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04415.csv",
+    "test_id": 34,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04419.csv",
+    "test_id": 38,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04421.csv",
+    "test_id": 40,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04423.csv",
+    "test_id": 42,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04425.csv",
+    "test_id": 44,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04427.csv",
+    "test_id": 46,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04431.csv",
+    "test_id": 50,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04433.csv",
+    "test_id": 52,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04435.csv",
+    "test_id": 54,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04437.csv",
+    "test_id": 56,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0052",
+    "source": "04439.csv",
+    "test_id": 58,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0051",
+    "source": "04483.csv",
+    "test_id": 40,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0053",
+    "source": "06808.csv",
+    "test_id": 136,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "nasa",
+    "cell_id": "B0054",
+    "source": "07061.csv",
+    "test_id": 252,
+    "issue": "missing_or_nonpositive_capacity"
+  },
+  {
+    "dataset": "calce",
+    "source": "CALCE_CX2-16_prism_LCO_25C_0-100_0.5-0.5C_a_cycle_data.csv",
+    "cycle_index": 966.0,
+    "issue": "discharge_capacity_above_150pct_nominal",
+    "value_ah": 12.497
+  }
+]

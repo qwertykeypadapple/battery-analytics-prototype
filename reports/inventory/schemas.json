@@ -1,0 +1,94 @@
+[
+  {
+    "dataset": "nasa",
+    "columns": [
+      "Voltage_measured",
+      "Current_measured",
+      "Temperature_measured",
+      "Current_load",
+      "Voltage_load",
+      "Time"
+    ],
+    "files": 2794,
+    "rows": 770070
+  },
+  {
+    "dataset": "nasa",
+    "columns": [
+      "Sense_current",
+      "Battery_current",
+      "Current_ratio",
+      "Battery_impedance",
+      "Rectified_Impedance"
+    ],
+    "files": 1956,
+    "rows": 93888
+  },
+  {
+    "dataset": "nasa",
+    "columns": [
+      "Voltage_measured",
+      "Current_measured",
+      "Temperature_measured",
+      "Current_charge",
+      "Voltage_charge",
+      "Time"
+    ],
+    "files": 2815,
+    "rows": 6512876
+  },
+  {
+    "dataset": "nasa",
+    "columns": [
+      "type",
+      "start_time",
+      "ambient_temperature",
+      "battery_id",
+      "test_id",
+      "uid",
+      "filename",
+      "Capacity",
+      "Re",
+      "Rct"
+    ],
+    "files": 1,
+    "rows": 7565
+  },
+  {
+    "dataset": "calce",
+    "columns": [
+      "Cycle_Index",
+      "Start_Time",
+      "End_Time",
+      "Test_Time (s)",
+      "Min_Current (A)",
+      "Max_Current (A)",
+      "Min_Voltage (V)",
+      "Max_Voltage (V)",
+      "Charge_Capacity (Ah)",
+      "Discharge_Capacity (Ah)",
+      "Charge_Energy (Wh)",
+      "Discharge_Energy (Wh)"
+    ],
+    "files": 7,
+    "rows": 12480
+  },
+  {
+    "dataset": "calce",
+    "columns": [
+      "Date_Time",
+      "Test_Time (s)",
+      "Cycle_Index",
+      "Current (A)",
+      "Voltage (V)",
+      "Charge_Capacity (Ah)",
+      "Discharge_Capacity (Ah)",
+      "Charge_Energy (Wh)",
+      "Discharge_Energy (Wh)",
+      "Environment_Temperature (C)",
+      "Cell_Temperature (C)"
+    ],
+    "files": 7,
+    "rows": 3938536
+  }
+]

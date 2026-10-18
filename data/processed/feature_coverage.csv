@@ -1,0 +1,4 @@
+dataset,charge_episodes,cells,valid_labels,valid_upper_windows,core_eligible,started_above_window,observed_cv_tapers,observed_cv_durations,measured_temperature,no_temperature_eligible,temperature_eligible,cv_no_temperature_eligible
+calce,12416,7,12070,12256,11911,157,11579,11948,0,11911,0,11545
+nasa,2815,34,2142,2082,1680,699,2081,2081,2082,1680,1680,1680
+oxford,519,8,519,519,519,0,0,0,519,519,519,0

@@ -1,0 +1,158 @@
+{
+  "fingerprint": "a5e4d3ee5ce100e3725dfb4ea60deec8981b82b020fb80e7b7b7f2c3dc7d881c",
+  "config": {
+    "data_root": "/Users/aman/Documents/iitd/datasets",
+    "seed": 42,
+    "features": {
+      "min_samples": 12,
+      "min_positive_current_c": 0.003,
+      "max_window_duration_s": 30000,
+      "max_gap_s": 600,
+      "min_cv_samples": 8,
+      "max_cv_gap_fraction": 0.4,
+      "voltage_smoothing_samples": 3,
+      "datasets": {
+        "nasa": {
+          "lower_v": 3.9,
+          "middle_v": 4.0,
+          "upper_middle_v": 4.1,
+          "upper_v": 4.18,
+          "cv_v": 4.19,
+          "voltage_limit_v": 4.2
+        },
+        "oxford": {
+          "lower_v": 3.9,
+          "middle_v": 4.0,
+          "upper_middle_v": 4.1,
+          "upper_v": 4.18,
+          "cv_v": 4.19,
+          "voltage_limit_v": 4.2
+        },
+        "calce": {
+          "lower_v": 3.9,
+          "middle_v": 4.0,
+          "upper_middle_v": 4.1,
+          "upper_v": 4.18,
+          "cv_v": 4.19,
+          "voltage_limit_v": 4.2
+        }
+      }
+    },
+    "quality": {
+      "min_discharge_samples": 10,
+      "maximum_capacity_multiple": 1.5,
+      "maximum_integration_relative_error": 0.2,
+      "capacity_absolute_tolerance_ah": 0.03,
+      "maximum_label_temperature_difference_c": 2,
+      "charge_cutoff_a": {
+        "nasa": 0.02,
+        "calce": 0.05
+      }
+    },
+    "validation": {
+      "smoothing_points": 5,
+      "validation_cell_fraction": 0.25,
+      "random_forest_trees": 100
+    },
+    "rul": {
+      "end_of_life_soh": 0.7,
+      "lookback_points": 12,
+      "min_points": 6,
+      "maximum_horizon_cycles": 20000,
+      "minimum_fade_per_cycle": 1e-06,
+      "swaps_per_day": 2.0,
+      "test_cycles_per_swap": 1.0,
+      "today_fractions": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ]
+    },
+    "dashboard": {
+      "watch_soh": 0.8,
+      "replace_soon_days": 14,
+      "watch_days": 45
+    }
+  },
+  "rows": 15750,
+  "capacity_references": 15729,
+  "feature_sets": {
+    "no_temperature": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "temperature": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "cv_no_temperature": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ]
+  },
+  "coverage": [
+    {
+      "dataset": "calce",
+      "charge_episodes": 12416,
+      "cells": 7,
+      "valid_labels": 12070,
+      "valid_upper_windows": 12256,
+      "core_eligible": 11911,
+      "started_above_window": 157,
+      "observed_cv_tapers": 11579,
+      "observed_cv_durations": 11948,
+      "measured_temperature": 0,
+      "no_temperature_eligible": 11911,
+      "temperature_eligible": 0,
+      "cv_no_temperature_eligible": 11545
+    },
+    {
+      "dataset": "nasa",
+      "charge_episodes": 2815,
+      "cells": 34,
+      "valid_labels": 2142,
+      "valid_upper_windows": 2082,
+      "core_eligible": 1680,
+      "started_above_window": 699,
+      "observed_cv_tapers": 2081,
+      "observed_cv_durations": 2081,
+      "measured_temperature": 2082,
+      "no_temperature_eligible": 1680,
+      "temperature_eligible": 1680,
+      "cv_no_temperature_eligible": 1680
+    },
+    {
+      "dataset": "oxford",
+      "charge_episodes": 519,
+      "cells": 8,
+      "valid_labels": 519,
+      "valid_upper_windows": 519,
+      "core_eligible": 519,
+      "started_above_window": 0,
+      "observed_cv_tapers": 0,
+      "observed_cv_durations": 0,
+      "measured_temperature": 519,
+      "no_temperature_eligible": 519,
+      "temperature_eligible": 519,
+      "cv_no_temperature_eligible": 0
+    }
+  ]
+}

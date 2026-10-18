@@ -1,0 +1,19 @@
+{
+  "info": {
+    "datasetId": 8953926,
+    "datasetSlug": "calce-dataset-battery-archive",
+    "ownerUser": "sidharthdk",
+    "usabilityRating": 0.23529411764705882,
+    "totalViews": 210,
+    "totalDownloads": 45,
+    "title": "CALCE dataset battery archive",
+    "subtitle": "This is a open battery dataset available in public.",
+    "description": "",
+    "licenses": [
+      {
+        "name": "unknown"
+      }
+    ],
+    "expectedUpdateFrequency": "not specified"
+  }
+}

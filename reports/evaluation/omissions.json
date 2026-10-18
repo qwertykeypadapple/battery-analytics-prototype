@@ -1,0 +1,27 @@
+[
+  {
+    "variant": "cv_no_temperature",
+    "group_id": "nasa:B0048",
+    "reason": "fewer_than_six_resolved_cv_episodes"
+  },
+  {
+    "variant": "cv_no_temperature",
+    "group_id": "nasa:B0049",
+    "reason": "fewer_than_six_resolved_cv_episodes"
+  },
+  {
+    "variant": "cv_no_temperature",
+    "group_id": "nasa:B0051",
+    "reason": "fewer_than_six_resolved_cv_episodes"
+  },
+  {
+    "variant": "cv_no_temperature",
+    "group_id": "nasa:B0054",
+    "reason": "fewer_than_six_resolved_cv_episodes"
+  },
+  {
+    "variant": "cv_no_temperature",
+    "group_id": "nasa:B0055",
+    "reason": "fewer_than_six_resolved_cv_episodes"
+  }
+]
