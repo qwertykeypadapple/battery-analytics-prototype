@@ -1,0 +1,1486 @@
+[
+  {
+    "fold": "calce:CX2-16",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-16"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-25",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-25"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-33",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-33"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-34",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-34"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-36",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-36"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-37",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-37"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce:CX2-38",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "test_cells": [
+      "calce:CX2-38"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0005",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0005"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0006",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0006"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0007",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0007"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0018",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0018"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0025",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0025"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0026",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0026"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0027",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0027"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0028",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0028"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0029",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0029"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0030",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0030"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0031",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0031"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0032",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0032"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0033",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0033"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0034",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0034"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0036",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0036"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0038",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0038"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0039",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0039"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0040",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0040"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0042",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0042"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0043",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0043"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0044",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0044"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0048",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0048"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0049",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0049"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0051",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0051"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0054",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0054"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa:B0055",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054"
+    ],
+    "test_cells": [
+      "nasa:B0055"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell1",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell1"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell2",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell2"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell3",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell3"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell4",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell4"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell5",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell5"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell6",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell6"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell7",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell7"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford:Cell8",
+    "validation": "leave_one_cell_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "test_cells": [
+      "oxford:Cell8"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "calce",
+    "validation": "leave_one_dataset_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "nasa",
+    "validation": "leave_one_dataset_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  },
+  {
+    "fold": "oxford",
+    "validation": "leave_one_dataset_out",
+    "features": [
+      "cycle_index",
+      "cycle_squared"
+    ],
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "fixed": "Ridge alpha1; no tuning"
+  }
+]
