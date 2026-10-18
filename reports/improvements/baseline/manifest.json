@@ -1,0 +1,30 @@
+{
+  "git_tag": "baseline-v1",
+  "commit": "c4a8096cbb30af9db66ceaccc81a7dbf3a243524",
+  "sha256": {
+    "reports/evaluation/metrics_overall.csv": "302ae45da28934f2c8369d3f65d9bda6f9753c329a8588882b5117214ce24d8b",
+    "reports/evaluation/metrics_per_dataset.csv": "a238f1c49b289a2739506ec4c0d51ed098031440e9f825794b88dc0cd0bf82cf",
+    "reports/evaluation/metrics_per_cell.csv": "bc5c04f3519ad44a4ec9c18595e298c7d0df4cca49a1ba483de51a5430475c06",
+    "reports/evaluation/fold_audit.json": "69b88cea2c1674b6b56c5e5375d5772e854636d84a18a47f1de6d89cb06cdd9e",
+    "reports/evaluation/predictions.parquet": "a2042275988e061d4a7d40f1b35cbd34a7a517d280e598e84b1c5a2c708448c5",
+    "reports/review/alarm_metrics.csv": "78f7ea240b3e23b75395b3d7b8064c0bf42a59c5b8d66cb72f086672947d3824",
+    "reports/review/alarm_events.csv": "b1cca471f787fec81e69a3dfa05c19f94bf3a5716933de121719d853e32ca7ef",
+    "reports/rul/end_of_life.csv": "9bd65121de1423258c2c3833910827ba03ac9a754938ae7096449c46a44204e0",
+    "src/battery_analytics/__init__.py": "6e6d09b6c42813e4391d8024192261fb091cc1ab1baadbd12a8b6c883556dacd",
+    "src/battery_analytics/build.py": "a76891f1037b928c8278e3d6d0483e99c7c10945a493b5884f9600e8e004d02e",
+    "src/battery_analytics/common.py": "c556e4b8b4ed7fe0a601882cd66e05975818a4cc95ebba6b728e8b82a191ee5b",
+    "src/battery_analytics/evaluation.py": "998a8c97c8a89de3962ca72366d893db0b042ab738a06081563dd3933714dd94",
+    "src/battery_analytics/features.py": "58aa5b2013706bd4c0d13fdc781f061d2f3ab41794ac7984ffda777cda632362",
+    "src/battery_analytics/fleet.py": "f77dd076da92fe00906cf70b045146e34528dd0a4a630ed4a3a77e8a9ee51db9",
+    "src/battery_analytics/loaders.py": "a8aa82180b0fd7124c2b3744a282132928ae38fa4608a504ce15027117552470",
+    "src/battery_analytics/models.py": "2ed8c063e4e13ce2a5c69c844db8069858b5733499f8313cd2459791a899ad0e",
+    "src/battery_analytics/rul.py": "8d581be6a1767f9b6507a05d43c3e137b06e675aeee24d82053a17d78d15e180",
+    "src/battery_analytics/train.py": "eb713bfa039eed96aecb13e133d9b289c92faa3de7e875125f9e865b6772a4a0"
+  },
+  "reference": {
+    "loco_cell_macro_mae_pp": 3.719682,
+    "lodo_cell_macro_mae_pp": 13.887386,
+    "timely_first_alerts": 0,
+    "observed_threshold_events": 19
+  }
+}

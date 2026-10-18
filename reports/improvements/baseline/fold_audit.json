@@ -1,0 +1,7430 @@
+[
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-16",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-16"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 9973,
+    "test_rows": 1938,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.461708213704673,
+      "linear_ridge": 1.5547694762614033,
+      "gradient_boosting": 1.7197897434467084,
+      "random_forest": 1.5615336413977883
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-25",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-25"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 10175,
+    "test_rows": 1736,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.29709370645445,
+      "linear_ridge": 2.385639893361084,
+      "gradient_boosting": 2.5977977400555097,
+      "random_forest": 2.451540283196797
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-33",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-33"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 10282,
+    "test_rows": 1629,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.797552294238177,
+      "linear_ridge": 2.1254848714268224,
+      "gradient_boosting": 2.2837660183964754,
+      "random_forest": 2.166459048512906
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-34",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-34"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 10231,
+    "test_rows": 1680,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.639054629496238,
+      "linear_ridge": 1.8085349642559656,
+      "gradient_boosting": 1.6273241883163512,
+      "random_forest": 1.5054192811958234
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-36",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-36"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 10002,
+    "test_rows": 1909,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.561501135395433,
+      "linear_ridge": 1.94698023633578,
+      "gradient_boosting": 1.7978748409959686,
+      "random_forest": 1.8894116429290078
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-37",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-37"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 10669,
+    "test_rows": 1242,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.221136773692304,
+      "linear_ridge": 1.8529640113515742,
+      "gradient_boosting": 1.5606334855462334,
+      "random_forest": 1.6346250408706124
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "calce:CX2-38",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-38"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 10134,
+    "test_rows": 1777,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.474412759163158,
+      "linear_ridge": 1.7281071695404735,
+      "gradient_boosting": 1.565501087005435,
+      "random_forest": 1.621429960174777
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0005",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0005"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.813541390066295,
+      "linear_ridge": 3.0644086054349318,
+      "gradient_boosting": 10.616269886018522,
+      "random_forest": 7.518325096880185
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0006",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0006"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.555330288731927,
+      "linear_ridge": 2.3628167255161743,
+      "gradient_boosting": 9.696550062026086,
+      "random_forest": 6.483792746139503
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0007",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0007"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.671388096109576,
+      "linear_ridge": 2.2346213301281215,
+      "gradient_boosting": 8.607540714651249,
+      "random_forest": 7.6338156577784115
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0018",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0018"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1551,
+    "test_rows": 129,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.569082016023128,
+      "linear_ridge": 2.2346449710667056,
+      "gradient_boosting": 8.780483963482359,
+      "random_forest": 7.836471826961956
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0025",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0025"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1653,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.878483002239467,
+      "linear_ridge": 2.1800287471312605,
+      "gradient_boosting": 8.867464138590986,
+      "random_forest": 7.6919525586768875
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0026",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0026"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1653,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.828927403913085,
+      "linear_ridge": 2.183807575861328,
+      "gradient_boosting": 8.985969297556517,
+      "random_forest": 7.772190703177848
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0027",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0027"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1656,
+    "test_rows": 24,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.862255539510478,
+      "linear_ridge": 2.1904230032598377,
+      "gradient_boosting": 9.162963938284774,
+      "random_forest": 7.816676055556135
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0028",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0028"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1654,
+    "test_rows": 26,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.822395747363142,
+      "linear_ridge": 2.1510729397554917,
+      "gradient_boosting": 9.450031679144265,
+      "random_forest": 8.225096967111233
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0029",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0029"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.771649613780584,
+      "linear_ridge": 2.204057623611658,
+      "gradient_boosting": 8.998977200953071,
+      "random_forest": 7.897296996530461
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0030",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0030"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.23998290108781,
+      "linear_ridge": 2.340062941331459,
+      "gradient_boosting": 8.992791609340617,
+      "random_forest": 7.852418973912116
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0031",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0031"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.640167527049938,
+      "linear_ridge": 2.411480428387105,
+      "gradient_boosting": 9.142299017741266,
+      "random_forest": 7.893683310614831
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0032",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0032"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.652790431656923,
+      "linear_ridge": 2.379818282835035,
+      "gradient_boosting": 9.422866497839014,
+      "random_forest": 7.901499662348529
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0033",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0033"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1511,
+    "test_rows": 169,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.810567959916073,
+      "linear_ridge": 2.1801838835764893,
+      "gradient_boosting": 9.591902046660493,
+      "random_forest": 7.82202339166808
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0034",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0034"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1487,
+    "test_rows": 193,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.671800995480181,
+      "linear_ridge": 2.1248005818324796,
+      "gradient_boosting": 9.770452757787968,
+      "random_forest": 7.857559771923777
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0036",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0036"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1486,
+    "test_rows": 194,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.074346774234765,
+      "linear_ridge": 2.2856255518080744,
+      "gradient_boosting": 9.803564533688593,
+      "random_forest": 7.785697697296001
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0038",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0038"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1646,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.129523483204785,
+      "linear_ridge": 2.300241270520731,
+      "gradient_boosting": 8.884801519401348,
+      "random_forest": 8.108697717744613
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0039",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0039"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1646,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.087249393987396,
+      "linear_ridge": 2.350687366989019,
+      "gradient_boosting": 9.334847818249083,
+      "random_forest": 8.001343675824794
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0040",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0040"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1647,
+    "test_rows": 33,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.01746191124072,
+      "linear_ridge": 2.3103666079354284,
+      "gradient_boosting": 9.985272154542905,
+      "random_forest": 8.401621624560585
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0042",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0042"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1625,
+    "test_rows": 55,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.600018295991017,
+      "linear_ridge": 2.6772778951233445,
+      "gradient_boosting": 4.883526686082378,
+      "random_forest": 3.839818067809681
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0043",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0043"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.928051791585075,
+      "linear_ridge": 2.290025908433537,
+      "gradient_boosting": 9.79874746759201,
+      "random_forest": 7.870635031256569
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0044",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0044"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.887269528123866,
+      "linear_ridge": 2.3197740120594728,
+      "gradient_boosting": 10.126374716203058,
+      "random_forest": 8.00487537507685
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0048",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0048"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.64155112573787,
+      "linear_ridge": 3.193299347986983,
+      "gradient_boosting": 10.274996502491462,
+      "random_forest": 8.008569424963019
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0049",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0049"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.203354526613788,
+      "linear_ridge": 2.086155014366898,
+      "gradient_boosting": 10.764216021002994,
+      "random_forest": 8.6660425771398
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0051",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0051"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1678,
+    "test_rows": 2,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.433729662589018,
+      "linear_ridge": 2.149553046711966,
+      "gradient_boosting": 10.362524815988948,
+      "random_forest": 8.670295575291908
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0054",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0054"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0051"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.527234334689497,
+      "linear_ridge": 3.7384531800194445,
+      "gradient_boosting": 6.213798887771098,
+      "random_forest": 4.1087803883686025
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "nasa:B0055",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054"
+    ],
+    "outer_test_cells": [
+      "nasa:B0055"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0051"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.545289961909289,
+      "linear_ridge": 6.942324809683144,
+      "gradient_boosting": 6.347306353131069,
+      "random_forest": 4.388974970665842
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell1",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell1"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 441,
+    "test_rows": 78,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.5327101744357075,
+      "linear_ridge": 1.8703541819776854,
+      "gradient_boosting": 1.2371568245971214,
+      "random_forest": 1.3104661302489158
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell2",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell2"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 446,
+    "test_rows": 73,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.204290368468001,
+      "linear_ridge": 1.5318104800684833,
+      "gradient_boosting": 0.9547821816948623,
+      "random_forest": 1.0947946662310573
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell3",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell3"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 443,
+    "test_rows": 76,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.660113740967853,
+      "linear_ridge": 2.1074715358542244,
+      "gradient_boosting": 1.503370943310958,
+      "random_forest": 1.6631705362951086
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell4",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell4"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 472,
+    "test_rows": 47,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.579749717177479,
+      "linear_ridge": 1.9986020264664384,
+      "gradient_boosting": 1.393317562889982,
+      "random_forest": 1.5466881669208423
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell5",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell5"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 473,
+    "test_rows": 46,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.503806948108385,
+      "linear_ridge": 2.0249405716830147,
+      "gradient_boosting": 1.525076956610898,
+      "random_forest": 1.5654316014495189
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell6",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell6"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 473,
+    "test_rows": 46,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.518349560224084,
+      "linear_ridge": 1.8936270181566468,
+      "gradient_boosting": 1.2815473666391524,
+      "random_forest": 1.4357807455141929
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell7",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell7"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 442,
+    "test_rows": 77,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.59442733317505,
+      "linear_ridge": 1.81026331386578,
+      "gradient_boosting": 1.2616153936223162,
+      "random_forest": 1.3610111574288093
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "no_temperature",
+    "fold": "oxford:Cell8",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell8"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 443,
+    "test_rows": 76,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.691606844205203,
+      "linear_ridge": 1.9814316482583152,
+      "gradient_boosting": 1.2249263424658734,
+      "random_forest": 1.3182448428668059
+    }
+  },
+  {
+    "validation": "leave_one_dataset_out",
+    "variant": "no_temperature",
+    "fold": "calce",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 2199,
+    "test_rows": 11911,
+    "inner_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0029",
+      "nasa:B0033",
+      "nasa:B0038",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0054",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell7"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.382447770509955,
+      "linear_ridge": 7.263262150005036,
+      "gradient_boosting": 10.43439297343301,
+      "random_forest": 9.629462577582334
+    }
+  },
+  {
+    "validation": "leave_one_dataset_out",
+    "variant": "no_temperature",
+    "fold": "nasa",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 12430,
+    "test_rows": 1680,
+    "inner_train_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell7"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 7.737269576044913,
+      "linear_ridge": 4.77703775175976,
+      "gradient_boosting": 1.3635880525353714,
+      "random_forest": 1.2546090329855506
+    }
+  },
+  {
+    "validation": "leave_one_dataset_out",
+    "variant": "no_temperature",
+    "fold": "oxford",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 13591,
+    "test_rows": 519,
+    "inner_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "nasa:B0005",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0026",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0043",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.323658362842554,
+      "linear_ridge": 2.473360163570404,
+      "gradient_boosting": 10.044912761270677,
+      "random_forest": 8.019286217522554
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0005",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0005"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.813541390066295,
+      "linear_ridge": 4.6040244801449814,
+      "gradient_boosting": 9.40637968534278,
+      "random_forest": 5.45857375693814
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0006",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0006"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.555330288731927,
+      "linear_ridge": 5.062971188243455,
+      "gradient_boosting": 8.45733174160119,
+      "random_forest": 4.840286238029434
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0007",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0007"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1515,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.671388096109576,
+      "linear_ridge": 5.4088237941049035,
+      "gradient_boosting": 8.600071302469402,
+      "random_forest": 5.527040921405336
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0018",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0018"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1551,
+    "test_rows": 129,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.569082016023128,
+      "linear_ridge": 5.031260524733355,
+      "gradient_boosting": 7.373099832968974,
+      "random_forest": 5.660339423544398
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0025",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0025"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1653,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.878483002239467,
+      "linear_ridge": 5.003679461069553,
+      "gradient_boosting": 6.703662723336665,
+      "random_forest": 5.390321604819237
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0026",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0026"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1653,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.828927403913085,
+      "linear_ridge": 5.032269719758481,
+      "gradient_boosting": 6.598265445017397,
+      "random_forest": 5.4053189720773585
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0027",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0027"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1656,
+    "test_rows": 24,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.862255539510478,
+      "linear_ridge": 4.996387386091957,
+      "gradient_boosting": 6.95355265238989,
+      "random_forest": 5.652646343053203
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0028",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0028"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1654,
+    "test_rows": 26,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.822395747363142,
+      "linear_ridge": 4.923234402698242,
+      "gradient_boosting": 6.740971930647785,
+      "random_forest": 5.330684568056766
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0029",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0029"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.771649613780584,
+      "linear_ridge": 5.232949873942472,
+      "gradient_boosting": 7.225051626187364,
+      "random_forest": 5.877517952676806
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0030",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0030"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.23998290108781,
+      "linear_ridge": 5.014449047483831,
+      "gradient_boosting": 7.02503008037503,
+      "random_forest": 5.769925799605202
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0031",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0031"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.640167527049938,
+      "linear_ridge": 5.223681750492339,
+      "gradient_boosting": 7.352051859561608,
+      "random_forest": 5.998083292066834
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0032",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0032"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.652790431656923,
+      "linear_ridge": 4.9622372170264555,
+      "gradient_boosting": 7.062571974407199,
+      "random_forest": 5.940968276825489
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0033",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0033"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1511,
+    "test_rows": 169,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.810567959916073,
+      "linear_ridge": 4.930795012800653,
+      "gradient_boosting": 7.117485245348347,
+      "random_forest": 5.775193328013207
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0034",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0034"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1487,
+    "test_rows": 193,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.671800995480181,
+      "linear_ridge": 4.936508343987426,
+      "gradient_boosting": 7.133849632035173,
+      "random_forest": 5.982212893998237
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0036",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0036"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1486,
+    "test_rows": 194,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.074346774234765,
+      "linear_ridge": 4.544927917286757,
+      "gradient_boosting": 7.158621232398889,
+      "random_forest": 5.92649855117074
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0038",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0038"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1646,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.129523483204785,
+      "linear_ridge": 4.379619504843112,
+      "gradient_boosting": 9.166184961675894,
+      "random_forest": 5.92259495466498
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0039",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0039"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1646,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0040",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.087249393987396,
+      "linear_ridge": 4.869062599334155,
+      "gradient_boosting": 9.16923568939155,
+      "random_forest": 5.902283703705959
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0040",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0040"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1647,
+    "test_rows": 33,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 12.01746191124072,
+      "linear_ridge": 4.378313453160491,
+      "gradient_boosting": 9.014069339113727,
+      "random_forest": 5.665437329899151
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0042",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0042"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1625,
+    "test_rows": 55,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.600018295991017,
+      "linear_ridge": 2.9422593754657997,
+      "gradient_boosting": 5.83473285977371,
+      "random_forest": 3.57138950618229
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0043",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0043"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.928051791585075,
+      "linear_ridge": 3.8322933157644408,
+      "gradient_boosting": 10.657309438800525,
+      "random_forest": 6.168889881408552
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0044",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0044"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.887269528123866,
+      "linear_ridge": 3.8251749519303484,
+      "gradient_boosting": 10.563086571016045,
+      "random_forest": 6.446758252947542
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0048",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0048"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.64155112573787,
+      "linear_ridge": 3.551917364238448,
+      "gradient_boosting": 10.483011105096184,
+      "random_forest": 6.267100635443714
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0049",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0049"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.203354526613788,
+      "linear_ridge": 3.6506605863505577,
+      "gradient_boosting": 10.506727234995004,
+      "random_forest": 5.6373296166553635
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0051",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0051"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1678,
+    "test_rows": 2,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0054"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.433729662589018,
+      "linear_ridge": 3.6277053938448898,
+      "gradient_boosting": 9.717843932020985,
+      "random_forest": 5.518050915538046
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0054",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "outer_test_cells": [
+      "nasa:B0054"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0055"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0051"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.527234334689497,
+      "linear_ridge": 3.9208304659968767,
+      "gradient_boosting": 5.019935128590412,
+      "random_forest": 3.640090429035282
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "nasa:B0055",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054"
+    ],
+    "outer_test_cells": [
+      "nasa:B0055"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1679,
+    "test_rows": 1,
+    "inner_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0039",
+      "nasa:B0051"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.545289961909289,
+      "linear_ridge": 7.20493202784138,
+      "gradient_boosting": 5.096438603160959,
+      "random_forest": 3.812562313533617
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell1",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell1"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 441,
+    "test_rows": 78,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.5327101744357075,
+      "linear_ridge": 1.9426923236469278,
+      "gradient_boosting": 1.4817660878651475,
+      "random_forest": 1.3045032859234214
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell2",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell2"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 446,
+    "test_rows": 73,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.204290368468001,
+      "linear_ridge": 1.7520250785407225,
+      "gradient_boosting": 1.215045762782478,
+      "random_forest": 1.0817833333434081
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell3",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell3"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 443,
+    "test_rows": 76,
+    "inner_train_cells": [
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.660113740967853,
+      "linear_ridge": 2.169793671016804,
+      "gradient_boosting": 1.8281792837918385,
+      "random_forest": 1.6735351093088096
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell4",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell4"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 472,
+    "test_rows": 47,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.579749717177479,
+      "linear_ridge": 1.9840736236583798,
+      "gradient_boosting": 1.4546437254521007,
+      "random_forest": 1.5675872996585523
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell5",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell5"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 473,
+    "test_rows": 46,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.503806948108385,
+      "linear_ridge": 2.0142639592578977,
+      "gradient_boosting": 1.735165302439832,
+      "random_forest": 1.597074708780031
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell6",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell6"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 473,
+    "test_rows": 46,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.518349560224084,
+      "linear_ridge": 1.869574205092768,
+      "gradient_boosting": 1.430738320501779,
+      "random_forest": 1.4903703611723158
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell7",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell7"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 442,
+    "test_rows": 77,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.59442733317505,
+      "linear_ridge": 1.7835567309757727,
+      "gradient_boosting": 1.416629409960195,
+      "random_forest": 1.3956958720316037
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "temperature",
+    "fold": "oxford:Cell8",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "window_mean_temp_c",
+      "window_temp_rise_c",
+      "ambient_temp_c"
+    ],
+    "outer_train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "outer_test_cells": [
+      "oxford:Cell8"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 443,
+    "test_rows": 76,
+    "inner_train_cells": [
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "inner_validation_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 6.691606844205203,
+      "linear_ridge": 1.94166334885649,
+      "gradient_boosting": 1.2903310495877076,
+      "random_forest": 1.315549495920838
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-16",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-16"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 9869,
+    "test_rows": 1676,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.37461191612783,
+      "linear_ridge": 1.5054801399299718,
+      "gradient_boosting": 1.467632505281603,
+      "random_forest": 1.5078896328378455
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-25",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-25"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 9811,
+    "test_rows": 1734,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.582415672260726,
+      "linear_ridge": 2.3661756007895987,
+      "gradient_boosting": 2.315206860362753,
+      "random_forest": 2.209603988815952
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-33",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-33"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 9920,
+    "test_rows": 1625,
+    "inner_train_cells": [
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.04734835398545,
+      "linear_ridge": 2.3139648171118603,
+      "gradient_boosting": 2.211072512846207,
+      "random_forest": 2.108298556150168
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-34",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-34"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 9865,
+    "test_rows": 1680,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.851704856250866,
+      "linear_ridge": 1.8451266625077531,
+      "gradient_boosting": 1.5185400906821145,
+      "random_forest": 1.4879134919194286
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-36",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-36"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 9662,
+    "test_rows": 1883,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.768120945511138,
+      "linear_ridge": 2.1337053702864943,
+      "gradient_boosting": 1.6783960223444465,
+      "random_forest": 1.766032396889462
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-37",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-37"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 10303,
+    "test_rows": 1242,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.517941433362187,
+      "linear_ridge": 1.9831713150753383,
+      "gradient_boosting": 1.5039508036771592,
+      "random_forest": 1.6504555590088554
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "calce:CX2-38",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "outer_test_cells": [
+      "calce:CX2-38"
+    ],
+    "selected_model": "gradient_boosting",
+    "train_rows": 9840,
+    "test_rows": 1705,
+    "inner_train_cells": [
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "inner_validation_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.716702990862402,
+      "linear_ridge": 1.913088457294353,
+      "gradient_boosting": 1.5330784859461464,
+      "random_forest": 1.6032495973266871
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0005",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0005"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1509,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.318807512098996,
+      "linear_ridge": 5.343879130914778,
+      "gradient_boosting": 7.257356103558629,
+      "random_forest": 6.797669306788152
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0006",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0006"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1509,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 9.68681629886105,
+      "linear_ridge": 4.856801561901413,
+      "gradient_boosting": 6.951344467374146,
+      "random_forest": 6.6009196167173725
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0007",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0007"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1509,
+    "test_rows": 165,
+    "inner_train_cells": [
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.72065970832667,
+      "linear_ridge": 5.075171007772939,
+      "gradient_boosting": 7.091619081177407,
+      "random_forest": 6.692074618993729
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0018",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0018"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1545,
+    "test_rows": 129,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.763194169980435,
+      "linear_ridge": 5.288302255020421,
+      "gradient_boosting": 7.358244593174905,
+      "random_forest": 6.978113928067694
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0025",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0025"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1647,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.668537121299607,
+      "linear_ridge": 5.136889259181842,
+      "gradient_boosting": 6.8153887582963355,
+      "random_forest": 6.609236247490539
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0026",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0026"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1647,
+    "test_rows": 27,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.677709461518278,
+      "linear_ridge": 5.12816348521968,
+      "gradient_boosting": 6.706912140125108,
+      "random_forest": 6.651639362067821
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0027",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0027"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1650,
+    "test_rows": 24,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.671475792966682,
+      "linear_ridge": 5.332715579393358,
+      "gradient_boosting": 7.001930722464153,
+      "random_forest": 6.865033073526823
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0028",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0028"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1648,
+    "test_rows": 26,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.679041304763057,
+      "linear_ridge": 5.219743579910392,
+      "gradient_boosting": 7.034209822865171,
+      "random_forest": 6.667032774709866
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0029",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0029"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0030",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.691606691672257,
+      "linear_ridge": 5.102509701218602,
+      "gradient_boosting": 7.162067949562413,
+      "random_forest": 6.8970662304746755
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0030",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0030"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.907775421898123,
+      "linear_ridge": 4.766620747350846,
+      "gradient_boosting": 6.913811605916491,
+      "random_forest": 6.7364905093685135
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0031",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0031"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.918471234185816,
+      "linear_ridge": 5.11609158591513,
+      "gradient_boosting": 7.220655929938806,
+      "random_forest": 6.760026401717664
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0032",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0032"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.92018229519454,
+      "linear_ridge": 4.949792367120467,
+      "gradient_boosting": 6.894118595976814,
+      "random_forest": 6.629782176155893
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0033",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0033"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1505,
+    "test_rows": 169,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.905787516292422,
+      "linear_ridge": 4.9488721757933245,
+      "gradient_boosting": 6.799679453815369,
+      "random_forest": 6.463767116721213
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0034",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0034"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1481,
+    "test_rows": 193,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.920171871666406,
+      "linear_ridge": 4.920412381745285,
+      "gradient_boosting": 7.025387297993293,
+      "random_forest": 6.552534003046022
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0036",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0036"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1480,
+    "test_rows": 194,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.91145360237833,
+      "linear_ridge": 5.126203045355836,
+      "gradient_boosting": 7.005135491563583,
+      "random_forest": 6.698813049074777
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0038",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0038"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1640,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0039",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 10.920439019572067,
+      "linear_ridge": 5.311337848977499,
+      "gradient_boosting": 6.831087922803965,
+      "random_forest": 6.651150087661624
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0039",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0039"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1640,
+    "test_rows": 34,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0038",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.041107962716252,
+      "linear_ridge": 5.7525044185844365,
+      "gradient_boosting": 6.371876903865262,
+      "random_forest": 6.080958805404153
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0040",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0040"
+    ],
+    "selected_model": "linear_ridge",
+    "train_rows": 1641,
+    "test_rows": 33,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0038",
+      "nasa:B0042"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 11.02751632662568,
+      "linear_ridge": 5.848811240107028,
+      "gradient_boosting": 6.632151013613187,
+      "random_forest": 6.147397659369365
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0042",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0042"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1619,
+    "test_rows": 55,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0043",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0038",
+      "nasa:B0040"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 7.145313308204799,
+      "linear_ridge": 3.2384410944866495,
+      "gradient_boosting": 2.9797208341673107,
+      "random_forest": 2.6565975993237156
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0043",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044"
+    ],
+    "outer_test_cells": [
+      "nasa:B0043"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0044"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0038",
+      "nasa:B0040"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 7.62660064995659,
+      "linear_ridge": 5.448022271011512,
+      "gradient_boosting": 4.968097712241494,
+      "random_forest": 3.3510063612356977
+    }
+  },
+  {
+    "validation": "leave_one_cell_out",
+    "variant": "cv_no_temperature",
+    "fold": "nasa:B0044",
+    "features": [
+      "time_lower_middle_s",
+      "time_middle_upper_middle_s",
+      "time_upper_middle_upper_s",
+      "time_lower_upper_s",
+      "cc_current_c",
+      "time_lower_cv_s",
+      "cv_duration_s",
+      "cv_taper_slope_c_per_s",
+      "cv_tau_s"
+    ],
+    "outer_train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043"
+    ],
+    "outer_test_cells": [
+      "nasa:B0044"
+    ],
+    "selected_model": "random_forest",
+    "train_rows": 1635,
+    "test_rows": 39,
+    "inner_train_cells": [
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043"
+    ],
+    "inner_validation_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0029",
+      "nasa:B0038",
+      "nasa:B0040"
+    ],
+    "validation_mae_pp": {
+      "mean_baseline": 7.560296260107593,
+      "linear_ridge": 5.321922524292542,
+      "gradient_boosting": 4.974197355700362,
+      "random_forest": 3.3485716124365004
+    }
+  }
+]
