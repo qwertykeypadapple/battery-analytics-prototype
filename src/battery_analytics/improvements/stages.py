@@ -125,3 +125,45 @@ def combined(name='E4_combined',ica=False,forced=False):
 
 
 def e4(): return combined()
+
+
+def e5():
+    import json
+    from .tracking import fit_noise,track
+    d=enhanced_data(); d=d[d.entry_rank>=K]
+    refs=pd.read_parquet(ROOT/'data/processed/capacity_references.parquet')
+    choices=json.loads((OUT/'E4_combined/audit.json').read_text())
+    byfold={(a['validation'],a['fold']):a for a in choices}
+    results=[]; validation_states=[]; audit=[]
+    for index,f in enumerate(folds()):
+        chosen=byfold[f['validation'],f['fold']]
+        if 'winner' not in chosen: continue
+        cols=chosen['features']
+        it=d[d.group_id.isin(f['inner_train_cells'])]; iv=d[d.group_id.isin(f['inner_validation_cells'])]
+        tr=d[d.group_id.isin(f['outer_train_cells'])]; te=d[d.group_id.isin(f['outer_test_cells'])]
+        parameters=fit_noise(it,cols,refs)
+        inner_model=fit(it,cols); inner=track(iv,inner_model.predict(iv[cols]),parameters)
+        inner['validation']=f['validation']; inner['fold']=f['fold']; validation_states.append(inner)
+        model=fit(tr,cols); outer=track(te,model.predict(te[cols]),parameters)
+        result=prediction_frame(te,outer.loc[te.index,'prediction'],f,'E5_filter')
+        for col in outer.columns:
+            if col.startswith(('lower_','upper_','variance_','covariance_','rate_per_','observation_')):
+                result[col]=outer.loc[te.index,col]
+        results.append(result)
+        audit.append(dict(validation=f['validation'],fold=f['fold'],observation_features=cols,parameters=parameters,
+            inner_train_cells=f['inner_train_cells'],inner_validation_cells=f['inner_validation_cells'],outer_test_cells=f['outer_test_cells']))
+        print(f'E5 filter {index+1}/{len(choices)}',flush=True)
+    p=save('E5_filter',pd.concat(results,ignore_index=True),audit)
+    pd.concat(validation_states,ignore_index=True).to_parquet(OUT/'E5_filter/inner_validation_states.parquet',index=False)
+    interval_metrics(p,OUT/'E5_filter/interval_calibration.csv')
+
+
+def interval_metrics(p,path):
+    rows=[]
+    for (protocol,dataset),g in p.groupby(['validation','dataset']):
+        for level in [50,80,95]:
+            inside=(g.soh>=g[f'lower_{level}'])&(g.soh<=g[f'upper_{level}'])
+            rows.append(dict(validation=protocol,dataset=dataset,nominal=level/100,n_rows=len(g),n_cells=g.cell_id.nunique(),
+                pooled_coverage=float(inside.mean()),cell_macro_coverage=float(pd.DataFrame({'cell':g.cell_id,'ok':inside}).groupby('cell').ok.mean().mean()),
+                mean_width_pp=float((g[f'upper_{level}']-g[f'lower_{level}']).mean()*100)))
+    pd.DataFrame(rows).to_csv(path,index=False)
