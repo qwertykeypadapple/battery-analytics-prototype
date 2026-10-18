@@ -167,3 +167,8 @@ def interval_metrics(p,path):
                 pooled_coverage=float(inside.mean()),cell_macro_coverage=float(pd.DataFrame({'cell':g.cell_id,'ok':inside}).groupby('cell').ok.mean().mean()),
                 mean_width_pp=float((g[f'upper_{level}']-g[f'lower_{level}']).mean()*100)))
     pd.DataFrame(rows).to_csv(path,index=False)
+
+
+def e6():
+    from .probability import run
+    run()
