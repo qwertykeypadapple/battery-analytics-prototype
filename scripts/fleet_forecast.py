@@ -135,6 +135,10 @@ def run():
     fig.tight_layout(rect=[0,.055,1,.96]); fig.savefig(OUT/'replacement_counts.png',dpi=170); plt.close(fig)
     loco=result[result.validation.eq('leave_one_cell_out')]
     totals={name: dict(mae=float(loco[name+'_matched_error'].abs().mean()), bias=float(loco[name+'_matched_error'].mean())) for name in ['charge','cycle','historical']}
+    power=loco.groupby('dataset').agg(mean_matched_cells=('matched_cells','mean'),
+        matched_windows_with_events=('matched_actual',lambda s:int((s>0).sum())),
+        charge_signed_bias=('charge_matched_error','mean'),mean_unknown_forecasts=('charge_unknown','mean'),
+        mean_unknown_outcomes=('unknown_actual','mean')).reset_index()
     table=loco[['dataset','today','days','inventory_cells','already_below','charge_count_subtotal','charge_unknown','cycle_count_subtotal','cycle_unknown',
                 'historical_rate_count','actual_count_lower','actual_count_upper','matched_cells','matched_actual','charge_matched_error','cycle_matched_error','historical_matched_error']]
     text=f'''# Fleet replacement-count forecasting
@@ -173,6 +177,13 @@ individual errors cancel: conditioning on available forecasts and follow-up can
 change bias. Full-fleet prediction and outcome bounds are too incomplete to infer
 unconditional bias. Overlapping windows are correlated; no independent-sample CI
 or significance claim is made.
+
+The small overall bias also masks opposite directions: CALCE slightly
+overpredicts on the matched subset, NASA underpredicts, and Oxford's matched
+windows contain no actual replacements. That zero-incident result does not test
+whether Oxford replacement counts can be caught accurately.
+
+{power.to_markdown(index=False,floatfmt='.3f')}
 
 {summary.to_markdown(index=False,floatfmt='.3f')}
 

@@ -1,0 +1,9 @@
+{
+  "source": "baseline-v1 git objects; verified unchanged after experiment series",
+  "sha256": {
+    "config.yaml": "39a289830c2db6a3b760ef650bb313cb2ef8c8803307d5526d22bf439d7a2885",
+    "data/processed/cycles.parquet": "4bd4368bb342792eb66ecf57ef00f44dd2f9b59351a080611bf121beb110e273",
+    "data/processed/capacity_references.parquet": "bbf925ddfb12c765f8e5e96399b93cad6a920943a9fbeb76997bdd0f8c3f7173",
+    "reports/inventory/cells.csv": "18ce6f6c02a9328ba0594287674880b59798993d4e806cca64d2439e69080a7c"
+  }
+}

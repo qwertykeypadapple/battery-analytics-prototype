@@ -17,7 +17,9 @@ def relative_features(frame, columns=CORE_FEATURES, k=K):
     frame=frame.sort_values(['group_id','cycle_index','charge_end_time_s']).copy()
     for _,h in frame.groupby('group_id'):
         reference=h.iloc[:k][columns].median()
-        for c in columns: frame.loc[h.index,'delta_'+c]=h[c]-reference[c]
+        for c in columns:
+            frame.loc[h.index,'delta_'+c]=h[c]-reference[c]
+            frame.loc[h.index[:k],'delta_'+c]=np.nan  # Reference not yet available.
     return frame
 
 
@@ -274,12 +276,14 @@ def e9():
         print('E9 calibration:',dataset,'locked:',locked,flush=True)
     pd.concat(outputs,ignore_index=True).to_parquet(out/'predictions.parquet',index=False)
     m=pd.concat(metrics,ignore_index=True); m.to_csv(out/'metrics.csv',index=False); write_json(out/'choices.json',choices)
-    summary=m[m.level.eq('overall')&m.signal.eq('raw')&~m.experiment.str.endswith('_matched_k0')].copy()
-    # Each overall row above contains just one target dataset.
-    idmap={f'E9_k{k}_seed{seed}_{phase}':dataset for dataset in [] for k in [] for seed in [] for phase in []}
     # Use dataset-level rows so target identity is explicit, then aggregate repeats.
     summary=m[m.level.eq('dataset')&m.signal.eq('raw')&~m.experiment.str.endswith('_matched_k0')]
     summary=summary.groupby(['phase','dataset','k']).agg(mean_mae_pp=('cell_macro_mae_pp','mean'),sd_mae_pp=('cell_macro_mae_pp','std'),
         min_mae_pp=('cell_macro_mae_pp','min'),max_mae_pp=('cell_macro_mae_pp','max'),mean_test_cells=('n_cells','mean')).reset_index()
     summary.to_csv(out/'learning_curve.csv',index=False)
     print(summary.to_string(index=False))
+
+
+def report():
+    from .reporting import run
+    run()

@@ -131,3 +131,53 @@ The Validation tab always exposes results for all datasets, independent of which
 The original Kaggle ZIP files, source links, licence metadata and download checksums remain in `../datasets/*_battery/`. Primary protocol documentation is linked in the inventory and results summary. Several Kaggle mirrors do not establish complete licensing/provenance; inspect their source terms for any intended redistribution or commercial use.
 
 This project contains no federated-learning implementation and no communication with Baaz. It provides no evidence yet for pack accuracy, prevented stranding, life extension, energy savings or operation above 45°C in Delhi.
+
+## Preregistered improvement experiments and fleet forecasting
+
+The starting state is tagged `baseline-v1`. Baseline artifacts and SHA-256 hashes
+are frozen under `reports/improvements/baseline/`; the original model modules
+remain unchanged. Read [the preregistration](reports/improvements/preregistration.md)
+before [the E0–E9 findings](reports/improvements/results.md).
+The original charge-only workflow beats the fixed cycle-count curve (3.72 vs
+8.98 pp LOCO), but the added pipelines do not justify replacing the baseline.
+Some apparent gains disappear on matched cohorts. Tracker intervals are badly
+miscalibrated and target calibration uses full labelled cell trajectories.
+
+Run stages separately, in order, from the project root:
+
+```bash
+python scripts/run_improvements.py E0
+python scripts/run_improvements.py E1
+python scripts/run_improvements.py E2
+python scripts/run_improvements.py E3
+python scripts/run_improvements.py E4
+python scripts/run_improvements.py E5
+python scripts/run_improvements.py E6
+python scripts/run_improvements.py E7
+python scripts/run_improvements.py E8
+python scripts/run_improvements.py E9
+python scripts/run_improvements.py report
+python scripts/fleet_forecast.py
+python -m pytest -q
+```
+
+Use `.venv/bin/python` in this existing workspace. The frozen artifacts must
+match the manifest; rebuild baseline experiments in a separate checkout when
+changing their code or data. E2/E8 need the original raw downloads. Other new
+stages use saved tables and their prerequisite improvement artifacts. Regenerating
+reports does not train models. Every E0–E9 result and all candidate selection
+audits remain saved, including negative results and missing prediction coverage.
+
+The dashboard adds model views for the baseline (recommended), the E8
+inner-selected known-history candidate, and the E5/E6 probabilistic tracker.
+The tracker's uncertainty bands, probability alerts and E7 flag are explicitly
+experimental; its uncertainty is never assigned to the E8 model. The
+**Improvement experiments** and **Fleet budgeting** tabs expose the results.
+
+Fleet count forecasting has its own [preregistration](reports/fleet_forecast/preregistration.md)
+and [results](reports/fleet_forecast/results.md). It uses held-out point-RUL
+counts at 30/60/90 scenario days, comparing cycle-only and historical-rate
+baselines. Complete-follow-up matched-count MAE is 0.37 batteries vs 0.80 and
+0.43, but coverage is sparse and Oxford contributes zero-incident windows.
+Full-fleet outcome/prediction bounds and bias are reported. This is not validated
+replacement budgeting. No ngrok token or other credentials are stored here.

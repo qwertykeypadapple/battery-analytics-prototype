@@ -39,6 +39,10 @@ st.caption('Charging-based estimates from laboratory cells. This demonstration c
 
 with st.sidebar:
     st.header('Fleet simulation')
+    model_view = st.selectbox('Model view', ['Frozen baseline (recommended)',
+        'Inner-selected features (E8; known history)', 'Probabilistic tracker (E5/E6; experimental)'])
+    improved = not model_view.startswith('Frozen')
+    tracker = model_view.startswith('Probabilistic')
     datasets = st.multiselect('Datasets', ['calce', 'nasa', 'oxford'], default=['calce'])
     validation_label = st.radio('Unseen-battery test', ['New cell within dataset', 'Entire dataset held out'])
     protocol = 'leave_one_cell_out' if validation_label == 'New cell within dataset' else 'leave_one_dataset_out'
@@ -53,12 +57,21 @@ with st.sidebar:
     watch_soh_pct = st.slider('Watch below SoH (%)', min_value=70, max_value=100, value=80)
     replace_days, watch_days = st.slider('Replace soon / Watch thresholds (days)', min_value=0, max_value=365, value=(14, 45))
     st.caption('Days are a scenario conversion. Partial swaps do not automatically equal full laboratory cycles.')
+    probability_horizon = st.selectbox('Probability alert horizon (lab cycles)', [28, 120, 180]) if tracker else 28
 
 if not datasets:
     st.info('Select at least one dataset.')
     st.stop()
 
 chosen = all_predictions[all_predictions.model.eq('training_selected') & all_predictions.variant.eq('no_temperature') & all_predictions.validation.eq(protocol)]
+if improved:
+    variant_path = ROOT / ('reports/improvements/E6_probabilistic/predictions.parquet' if tracker else
+                           'reports/improvements/E8_optional_ica/predictions.parquet')
+    if not variant_path.exists():
+        st.info('Run the preregistered improvement stages before selecting this view.')
+        st.stop()
+    chosen = pd.read_parquet(variant_path)
+    chosen = chosen[chosen.validation.eq(protocol)]
 chosen = chosen[chosen.dataset.isin(datasets)]
 inventory = cells[cells.dataset.isin(datasets)]
 if not len(chosen):
@@ -71,10 +84,38 @@ today = st.slider('Today cycle', min_value=0, max_value=max_cycle, value=default
 rul_config = dict(config['rul'], lookback_points=lookback, swaps_per_day=swaps, test_cycles_per_swap=cycles_per_swap)
 snapshot = fleet_snapshot(chosen, inventory, today, rul_config, value=value, method=method,
                           watch_soh=watch_soh_pct / 100, replace_days=replace_days, watch_days=watch_days)
+fast_path = ROOT / 'reports/improvements/E7_fast/cell_flags.csv'
+fast = pd.read_csv(fast_path) if fast_path.exists() else pd.DataFrame()
+if tracker:
+    for index, row in snapshot.iterrows():
+        h = chosen[chosen.dataset.eq(row.dataset) & chosen.cell_id.eq(row.cell)]
+        prefix = h[h.cycle_index <= today].sort_values(['cycle_index', 'charge_end_time_s'])
+        if not len(prefix) or today > h.cycle_index.max(): continue
+        last = prefix.iloc[-1]
+        probability = last[f'probability_{probability_horizon}']
+        threshold = last[f'alert_threshold_{probability_horizon}']
+        snapshot.loc[index, 'soh_pct'] = last.prediction * 100
+        snapshot.loc[index, 'Crossing probability (uncalibrated)'] = probability
+        snapshot.loc[index, 'Learned alert threshold'] = threshold
+        snapshot.loc[index, 'cycles_left'] = last.rul_median if np.isfinite(last.rul_median) else np.nan
+        snapshot.loc[index, 'scenario_days_left'] = last.rul_median / (swaps * cycles_per_swap) if np.isfinite(last.rul_median) else np.nan
+        snapshot.loc[index, 'status'] = ('Check estimate' if not 0 < last.prediction <= 1.5 else
+            ('Replace soon' if probability >= threshold else ('Watch' if last.prediction < watch_soh_pct / 100 else 'Healthy')))
+        snapshot.loc[index, 'evidence'] = 'Experimental probability policy; probabilities are not calibrated'
+        if len(fast):
+            flag = fast[fast.validation.eq(protocol) & fast.dataset.eq(row.dataset) & fast.cell_id.eq(row.cell)]
+            if len(flag):
+                f = flag.iloc[0]
+                snapshot.loc[index, 'Fast degradation'] = ('Flagged' if f.flag else 'Not flagged') if f.available and today >= f.decision_cycle else 'Insufficient history'
 
-fleet_tab, validation_tab, methods_tab = st.tabs(['Fleet', 'Validation', 'Data and methods'])
+fleet_tab, validation_tab, methods_tab, improvement_tab, budgeting_tab = st.tabs(['Fleet', 'Validation', 'Data and methods', 'Improvement experiments', 'Fleet budgeting'])
 with fleet_tab:
-    st.warning('The saved 14-day/raw-linear laboratory backtest has zero timely first alerts across 19 observed capacity-threshold events. The replacement labels below demonstrate the workflow; their timing is not an operationally validated policy.')
+    if tracker:
+        st.warning('Experimental tracker: nominal 95% SoH bands cover only 16% CALCE, 82% NASA and 54% Oxford on a cell-macro basis. The 14-day policy gives 2 timely first alerts out of 19. These probabilities and replacement labels are not operationally calibrated.')
+    elif improved:
+        st.warning('This known-history candidate uses cycle count and a five-charge entry reference. It is selected inside each training fold; it does not establish a gain over the frozen baseline. No E5 uncertainty or probability is silently assigned to this E8 model.')
+    else:
+        st.warning('The saved 14-day/raw-linear laboratory backtest has zero timely first alerts across 19 observed capacity-threshold events. The replacement labels below demonstrate the workflow; their timing is not an operationally validated policy.')
     a, b, c, d = st.columns(4)
     a.metric('Cells in view', len(snapshot))
     b.metric('Replace soon', int(snapshot.status.eq('Replace soon').sum()))
@@ -101,10 +142,13 @@ with fleet_tab:
     visible_actual = actual if show_future else actual[actual.cycle_index <= today]
     figure = go.Figure()
     figure.add_trace(go.Scatter(x=visible_actual.cycle_index, y=visible_actual.soh * 100, name='Discharge reference', mode='lines+markers', line_color='#718096'))
+    if tracker and len(visible_h):
+        figure.add_trace(go.Scatter(x=visible_h.cycle_index, y=visible_h.upper_95 * 100, mode='lines', line=dict(width=0), showlegend=False))
+        figure.add_trace(go.Scatter(x=visible_h.cycle_index, y=visible_h.lower_95 * 100, mode='lines', line=dict(width=0), fill='tonexty', fillcolor='rgba(49,130,206,.15)', name='Uncalibrated 95% tracker band'))
     figure.add_trace(go.Scatter(x=visible_h.cycle_index, y=visible_h.prediction * 100, name='Held-out raw estimate', mode='lines', line_color='#3182ce', opacity=.65))
     figure.add_trace(go.Scatter(x=visible_h.cycle_index, y=visible_h.prediction_smoothed * 100, name='Trailing median estimate', mode='lines', line_color='#00847e'))
     estimate = forecast(h, today, rul_config, method, value)
-    if estimate['forecast_reason'] == 'estimated' and today <= h.cycle_index.max():
+    if not tracker and estimate['forecast_reason'] == 'estimated' and today <= h.cycle_index.max():
         origin = estimate['as_of_cycle']
         horizon = min(estimate['predicted_rul_cycles'] * 1.15, rul_config['maximum_horizon_cycles'])
         x = np.linspace(origin, origin + max(1, horizon), 100)
@@ -114,8 +158,14 @@ with fleet_tab:
     figure.add_vline(x=today, line_dash='dot', line_color='#718096')
     figure.update_layout(title=f'{dataset.upper()} {cell}', xaxis_title='Source laboratory cycle index', yaxis_title='SoH (% of rated Ah)', height=470, legend=dict(orientation='h', y=-.2), margin=dict(t=60, b=90))
     st.plotly_chart(figure, use_container_width=True)
-    st.write(f"RUL support: {estimate['forecast_reason'].replace('_', ' ')}. History points used: {estimate['history_points']}.")
+    if tracker:
+        st.write('RUL uses the current Gaussian SoH/rate state and fixed posterior draws. Infinite lifetime draws remain unavailable in the fleet table.')
+    else:
+        st.write(f"RUL support: {estimate['forecast_reason'].replace('_', ' ')}. History points used: {estimate['history_points']}.")
     st.caption('The dotted line marks the selected cycle. Later data, when shown, are visual context only and never enter the forecast. Laboratory cell alerts require pack-specific validation before maintenance decisions.')
+    if tracker:
+        st.caption('Uncertainty and probability alerts refer to the raw E5 state, even if the supplementary trailing-median history is selected. Saved probability thresholds come only from inner validation cells; display controls do not retune them.')
+        st.caption('The fast-degradation flag is the saved decision at the 20th E4 observation, after five warmup charges. It is unavailable before that point and is not a newly evaluated late-life detector.')
 
 with validation_tab:
     st.subheader('Accuracy on batteries excluded from training')
@@ -160,3 +210,30 @@ The RUL models extrapolate recent predicted SoH. A flat, increasing or very long
     summary_path = ROOT / 'reports/results_summary.md'
     if summary_path.exists():
         st.download_button('Download results summary', summary_path.read_text(), file_name='results_summary.md', mime='text/markdown')
+
+with improvement_tab:
+    st.subheader('Preregistered E0–E9 experiments')
+    st.write('The frozen baseline remains the recommended default. New assumptions, lost prediction coverage and negative results remain visible. All displayed experiments use held-out cells.')
+    ablation = ROOT / 'reports/improvements/ablation.csv'
+    if ablation.exists(): st.dataframe(pd.read_csv(ablation), hide_index=True, use_container_width=True)
+    for title, relative in [('SoH interval calibration', 'E5_filter/interval_calibration.csv'),
+            ('First alerts by horizon', 'E6_probabilistic/alert_metrics.csv'),
+            ('Fast-degradation detection', 'E7_fast/classification_metrics.csv'),
+            ('Calibration learning curve', 'E9_calibration/learning_curve.csv')]:
+        path = ROOT / 'reports/improvements' / relative
+        if path.exists():
+            with st.expander(title): st.dataframe(pd.read_csv(path), hide_index=True, use_container_width=True)
+    learning = ROOT / 'reports/improvements/figures/calibration_learning_curve.png'
+    if learning.exists(): st.image(str(learning), use_column_width=True)
+    report = ROOT / 'reports/improvements/results.md'
+    if report.exists(): st.download_button('Download improvement findings', report.read_text(), file_name='improvement_results.md')
+
+with budgeting_tab:
+    st.subheader('Fleet replacement-count backtest')
+    st.warning('Coverage is incomplete and fleet sizes are small. This experiment does not validate replacement budgeting. Counts use deterministic raw-linear RUL forecasts; they are not sums of calibrated probabilities.')
+    fleet_root = ROOT / 'reports/fleet_forecast'
+    if (fleet_root / 'scenarios.csv').exists():
+        scenarios = pd.read_csv(fleet_root / 'scenarios.csv')
+        st.dataframe(scenarios[scenarios.validation.eq(protocol)], hide_index=True, use_container_width=True)
+        st.image(str(fleet_root / 'replacement_counts.png'), use_column_width=True)
+        st.download_button('Download fleet forecast report', (fleet_root / 'results.md').read_text(), file_name='fleet_forecast_results.md')

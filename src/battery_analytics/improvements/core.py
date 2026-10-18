@@ -23,6 +23,10 @@ def verify_baseline():
     manifest = json.loads((BASE / 'manifest.json').read_text())
     for name, digest in manifest['sha256'].items():
         assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
+    inputs=OUT/'frozen_inputs.json'
+    if inputs.exists():
+        for name,digest in json.loads(inputs.read_text())['sha256'].items():
+            assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest, name
 
 
 def baseline():

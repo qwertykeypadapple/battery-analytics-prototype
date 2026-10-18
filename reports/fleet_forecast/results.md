@@ -72,6 +72,17 @@ change bias. Full-fleet prediction and outcome bounds are too incomplete to infe
 unconditional bias. Overlapping windows are correlated; no independent-sample CI
 or significance claim is made.
 
+The small overall bias also masks opposite directions: CALCE slightly
+overpredicts on the matched subset, NASA underpredicts, and Oxford's matched
+windows contain no actual replacements. That zero-incident result does not test
+whether Oxford replacement counts can be caught accurately.
+
+| dataset   |   mean_matched_cells |   matched_windows_with_events |   charge_signed_bias |   mean_unknown_forecasts |   mean_unknown_outcomes |
+|:----------|---------------------:|------------------------------:|---------------------:|-------------------------:|------------------------:|
+| calce     |                2.250 |                             4 |                0.111 |                    2.000 |                   0.000 |
+| nasa      |                2.750 |                             9 |               -0.222 |                    6.250 |                   7.750 |
+| oxford    |                7.083 |                             0 |                0.000 |                    0.500 |                   0.667 |
+
 | validation            | dataset   |   days | method     |   scored_scenarios |   mean_matched_cells |   mae_count |   rmse_count |   signed_bias_count |
 |:----------------------|:----------|-------:|:-----------|-------------------:|---------------------:|------------:|-------------:|--------------------:|
 | leave_one_cell_out    | calce     |     30 | charge     |                  3 |                2.250 |       0.667 |        0.816 |               0.000 |

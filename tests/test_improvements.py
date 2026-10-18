@@ -1,8 +1,9 @@
 import inspect
+import json
 import numpy as np
 import pandas as pd
 import pytest
-from battery_analytics.common import load_config
+from battery_analytics.common import load_config, ROOT
 from battery_analytics.improvements.charge import throughput, incremental_capacity, Q_FEATURES
 from battery_analytics.improvements.stages import relative_features, anchor_correction
 from battery_analytics.improvements.core import verify_baseline
@@ -32,7 +33,8 @@ def test_relative_features_ignore_labels_and_future_charges():
     d.loc[8:,CORE_FEATURES]=9999; d['soh']=-999
     after=relative_features(d)
     np.testing.assert_equal(before.filter(like='delta_').iloc[:8].to_numpy(),after.filter(like='delta_').iloc[:8].to_numpy())
-    np.testing.assert_allclose(before.delta_time_lower_upper_s, np.arange(10.)-2)
+    assert before.delta_time_lower_upper_s.iloc[:5].isna().all()
+    np.testing.assert_allclose(before.delta_time_lower_upper_s.iloc[5:], np.arange(5.,10.)-2)
 
 
 def test_entry_anchor_uses_explicit_single_reference():
@@ -71,3 +73,45 @@ def test_probability_forecasts_do_not_read_truth_or_future_rows():
     b=risk_columns(h)
     for c in [c for c in a if c.startswith(('probability_','rul_'))]: assert a[c].iloc[0]==b[c].iloc[0]
     assert a.probability_28.iloc[0]<a.probability_120.iloc[0]<=a.probability_180.iloc[0]
+
+
+def test_improvement_selection_and_noise_have_no_test_cells():
+    for name in ['E4_combined','E8_forced_ica','E8_optional_ica']:
+        audit=json.loads((ROOT/'reports/improvements'/name/'audit.json').read_text())
+        for f in audit:
+            if 'winner' not in f: continue
+            assert set(f['inner_train_cells']).isdisjoint(f['inner_validation_cells'])
+            assert set(f['inner_train_cells']+f['inner_validation_cells']).isdisjoint(f['outer_test_cells'])
+            scores=f['inner_scores_pp']; minimum=min(scores.values())
+            assert f['winner']==next(k for k,v in scores.items() if v<=minimum+.20)
+    for f in json.loads((ROOT/'reports/improvements/E5_filter/audit.json').read_text()):
+        pars=f['parameters']; noise=set(pars['noise_training_cells'])
+        assert noise<=set(f['inner_train_cells'])
+        assert noise.isdisjoint(f['inner_validation_cells']+f['outer_test_cells'])
+        assert set(pars['prior_cells'])<=noise
+        for split in pars['noise_crossfit_splits']:
+            assert set(split['train_cells']).isdisjoint(split['validation_cells'])
+            assert set(split['train_cells']+split['validation_cells'])<=noise
+
+
+def test_alarm_thresholds_and_calibration_choices_keep_holdouts_separate():
+    for f in json.loads((ROOT/'reports/improvements/E6_probabilistic/threshold_audit.json').read_text()):
+        assert set(f['selection_cells']).isdisjoint(f['outer_test_cells'])
+    for f in json.loads((ROOT/'reports/improvements/E9_calibration/choices.json').read_text()):
+        assert len(f['calibration_cells'])==f['k']
+        assert set(f['calibration_cells']).isdisjoint(f['development_test_cells'])
+        assert f['locked_cell'] not in f['calibration_cells']+f['development_test_cells']
+        assert set(f['source_training_cells']).isdisjoint(f['calibration_cells']+f['development_test_cells']+[f['locked_cell']])
+
+
+def test_calibration_offset_uses_only_designated_cells():
+    from battery_analytics.improvements.stages import calibration_offset
+    a=pd.DataFrame({'group_id':['a','a','b'],'soh':[.8,.8,.9]})
+    assert calibration_offset(a,[.7,.7,.7])==pytest.approx(.15)
+    assert calibration_offset(a.iloc[:0],[])==0
+
+
+def test_fast_flag_is_unavailable_until_registered_decision_cycle():
+    p=pd.read_parquet(ROOT/'reports/improvements/E7_fast/predictions.parquet')
+    assert not p.loc[p.cycle_index<p.decision_cycle,'fast_degradation_flag'].any()
+    assert not p.loc[p.decision_cycle.isna(),'fast_degradation_flag'].any()
