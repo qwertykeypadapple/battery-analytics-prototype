@@ -1,0 +1,1524 @@
+[
+  {
+    "fold": "calce:CX2-16",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-16"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-16:charge_run2"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-25",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-25"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-25:charge_run0"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-33",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-33"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-33:charge_run2"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-34",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-34"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-34:charge_run2"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-36",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-36"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-36:charge_run0"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-37",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-38"
+    ],
+    "test_cells": [
+      "calce:CX2-37"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-37:charge_run0"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce:CX2-38",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37"
+    ],
+    "test_cells": [
+      "calce:CX2-38"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-38:charge_run0"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0005",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0005"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0005:05123.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0006",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0006"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0006:04507.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0007",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0007"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0007:05739.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0018",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0018"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0018:06357.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0025",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0025"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0025:04001.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0026",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0026"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0026:04081.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0027",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0027"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0027:03167.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0028",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0028"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0028:01451.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0029",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0029"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0029:01355.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0030",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0030"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0030:02901.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0031",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0031"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0031:04162.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0032",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0032"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0032:01014.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0033",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0033"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0033:02415.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0034",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0034"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0034:01807.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0036",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0036"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0036:03516.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0038",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0038"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0038:02325.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0039",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0039"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0039:01143.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0040",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0040"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0040:01265.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0042",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0042"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0042:01533.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0043",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0043"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0043:00740.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0044",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0044"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0044:03242.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0048",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0048"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0048:00510.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0049",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0049"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0049:04310.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0051",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0051"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0051:04445.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0054",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "nasa:B0054"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0054:06854.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa:B0055",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054"
+    ],
+    "test_cells": [
+      "nasa:B0055"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0055:07539.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell1",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell1"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell1:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell2",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell2"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell2:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell3",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell3"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell3:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell4",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell4"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell4:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell5",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell5"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell5:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell6",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell6"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell6:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell7",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "oxford:Cell7"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell7:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford:Cell8",
+    "validation": "leave_one_cell_out",
+    "train_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7"
+    ],
+    "test_cells": [
+      "oxford:Cell8"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell8:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "calce",
+    "validation": "leave_one_dataset_out",
+    "train_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38"
+    ],
+    "entry_cycle_uids": [
+      "calce:CX2-16:charge_run2",
+      "calce:CX2-25:charge_run0",
+      "calce:CX2-33:charge_run2",
+      "calce:CX2-34:charge_run2",
+      "calce:CX2-36:charge_run0",
+      "calce:CX2-37:charge_run0",
+      "calce:CX2-38:charge_run0"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "nasa",
+    "validation": "leave_one_dataset_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "test_cells": [
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "entry_cycle_uids": [
+      "nasa:B0005:05123.csv",
+      "nasa:B0006:04507.csv",
+      "nasa:B0007:05739.csv",
+      "nasa:B0018:06357.csv",
+      "nasa:B0025:04001.csv",
+      "nasa:B0026:04081.csv",
+      "nasa:B0027:03167.csv",
+      "nasa:B0028:01451.csv",
+      "nasa:B0029:01355.csv",
+      "nasa:B0030:02901.csv",
+      "nasa:B0031:04162.csv",
+      "nasa:B0032:01014.csv",
+      "nasa:B0033:02415.csv",
+      "nasa:B0034:01807.csv",
+      "nasa:B0036:03516.csv",
+      "nasa:B0038:02325.csv",
+      "nasa:B0039:01143.csv",
+      "nasa:B0040:01265.csv",
+      "nasa:B0042:01533.csv",
+      "nasa:B0043:00740.csv",
+      "nasa:B0044:03242.csv",
+      "nasa:B0048:00510.csv",
+      "nasa:B0049:04310.csv",
+      "nasa:B0051:04445.csv",
+      "nasa:B0054:06854.csv",
+      "nasa:B0055:07539.csv"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  },
+  {
+    "fold": "oxford",
+    "validation": "leave_one_dataset_out",
+    "train_cells": [
+      "calce:CX2-16",
+      "calce:CX2-25",
+      "calce:CX2-33",
+      "calce:CX2-34",
+      "calce:CX2-36",
+      "calce:CX2-37",
+      "calce:CX2-38",
+      "nasa:B0005",
+      "nasa:B0006",
+      "nasa:B0007",
+      "nasa:B0018",
+      "nasa:B0025",
+      "nasa:B0026",
+      "nasa:B0027",
+      "nasa:B0028",
+      "nasa:B0029",
+      "nasa:B0030",
+      "nasa:B0031",
+      "nasa:B0032",
+      "nasa:B0033",
+      "nasa:B0034",
+      "nasa:B0036",
+      "nasa:B0038",
+      "nasa:B0039",
+      "nasa:B0040",
+      "nasa:B0042",
+      "nasa:B0043",
+      "nasa:B0044",
+      "nasa:B0048",
+      "nasa:B0049",
+      "nasa:B0051",
+      "nasa:B0054",
+      "nasa:B0055"
+    ],
+    "test_cells": [
+      "oxford:Cell1",
+      "oxford:Cell2",
+      "oxford:Cell3",
+      "oxford:Cell4",
+      "oxford:Cell5",
+      "oxford:Cell6",
+      "oxford:Cell7",
+      "oxford:Cell8"
+    ],
+    "entry_cycle_uids": [
+      "oxford:Cell1:cyc0000",
+      "oxford:Cell2:cyc0000",
+      "oxford:Cell3:cyc0000",
+      "oxford:Cell4:cyc0000",
+      "oxford:Cell5:cyc0000",
+      "oxford:Cell6:cyc0000",
+      "oxford:Cell7:cyc0000",
+      "oxford:Cell8:cyc0000"
+    ],
+    "allowed_label_count_per_test_cell": 1,
+    "excluded": "first eligible observation"
+  }
+]
